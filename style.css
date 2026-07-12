@@ -140,17 +140,26 @@ h2,
   width: 9rem;
   max-width: 100%;
   height: auto;
+  margin-block: 1rem;
   margin-inline: auto;
   border-radius: 1rem;
-  box-shadow:
-    0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 @media (min-width: 640px) {
   .help-screenshot {
     width: 12rem;
   }
+}
+
+/* Wide UI crop screenshots (share sheet, toolbar, etc.) */
+.help-ui-crop {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin-block: 1rem;
+  margin-inline: auto;
+  border-radius: 0.75rem;
 }
 
 .help-search-shadow {

@@ -4,7 +4,7 @@ sidebarTitle: "Nutrition"
 description: "Recipes in Souschef can display calories, protein, carbohydrates, fat, and other nutrients. If nutrition is missing, Generate Nutrition uses AI to estimate it."
 ---
 
-Souschef shows nutrition information right inside your recipe so you can plan meals with a clear picture of what you're eating. When the source website already includes nutrition, Souschef uses that; when it doesn't, you can generate estimates with AI in a single tap. You can filter your library by calories per serving and edit any value yourself.
+Souschef shows nutrition information right inside your recipe so you can plan meals with a clear picture of what you're eating. When the source website already includes nutrition, Souschef uses that; when it doesn't, you can generate estimates with AI in a single tap. You can sort your library by calories per serving and edit any value yourself.
 
 ## What Souschef shows
 
@@ -15,10 +15,6 @@ Every recipe with nutrition data displays a per-serving breakdown of:
 - **Carbohydrates**
 - **Fat**
 - **Additional nutrients** (fiber, sugar, sodium, and more when available)
-
-<Info>
-  📸 Screenshot needed: a recipe detail view with the nutrition panel showing calories, protein, carbs, and fat per serving.
-</Info>
 
 ## Where nutrition comes from
 
@@ -40,37 +36,62 @@ If a recipe doesn't have nutrition information, generate an estimate in one tap.
   <Step title="Tap 'Generate Nutrition'">
     In the nutrition section, tap **Generate Nutrition**. Souschef reads the ingredients, quantities, and servings and produces an estimate for calories, protein, carbs, fat, and additional nutrients.
 
-    <Info>
-      📸 Screenshot needed: the 'Generate Nutrition' button on a recipe that has no nutrition data yet.
-    </Info>
+    <img
+      src="/images/screenshots/nutrition/generate-nutrition.webp"
+      alt="Generate Nutrition button on a recipe with no nutrition data yet"
+      className="help-ui-crop"
+    />
+
   </Step>
   <Step title="Review the estimated values">
     The estimated nutrition is labeled so it's clear the values came from AI. Tap any number to edit it if you'd like a more precise value.
 
-    <Info>
-      📸 Screenshot needed: the generated nutrition panel with an 'AI estimate' label visible.
-    </Info>
+    <img
+      src="/images/screenshots/nutrition/ai-generated-nutrition.webp"
+      alt="Nutrition panel showing calories, protein, carbs, and fat labeled as AI Estimate"
+      className="help-ui-crop"
+    />
+
   </Step>
 </Steps>
 
 <Note>
-  AI nutrition estimates are meant as a helpful guide, not medical or dietary advice. Actual values depend on brands, exact quantities, and how you cook — always double-check if you have specific dietary needs.
+  AI nutrition estimates are meant as a helpful guide, not medical or dietary
+  advice. Actual values depend on brands, exact quantities, and how you cook —
+  always double-check if you have specific dietary needs.
 </Note>
 
 ## Edit nutrition manually
 
-You can always override any value. Tap the nutrition section, then tap the number you'd like to edit (calories, protein, carbs, fat, etc.). This is handy when you know a value more precisely than the source or the AI does.
+You can always override any value. Tap the nutrition section, then edit calories, protein, carbs, fat, or add more nutrients. Choose whether values are listed **Per serving** or **Per recipe**. This is handy when you know a value more precisely than the source or the AI does.
 
-## Filter your library by calories
+<div className="flex flex-wrap justify-center items-start gap-4 my-4 [&_.help-screenshot]:mx-0">
+  <img
+    src="/images/screenshots/nutrition/edit-nutrition-button.webp"
+    alt="Recipe nutrition section with the edit control to open the nutrient editor"
+    className="help-screenshot"
+  />
+  <img
+    src="/images/screenshots/nutrition/nutrient-editor.webp"
+    alt="Nutrition editor with per serving values for calories, protein, carbs, and fat"
+    className="help-screenshot"
+  />
+</div>
 
-Looking for something lighter tonight? Use the calorie filter on your library to show only recipes under a certain number of calories per serving.
+## Sort your library by calories
 
-<Info>
-  📸 Screenshot needed: the library filter drawer with the 'calories per serving' filter active.
-</Info>
+Looking for something lighter tonight? Open the sort menu on your library and choose **Calories per serving (high)** or **Calories per serving (low)**.
+
+<img
+  src="/images/screenshots/nutrition/sort-by-calories.webp"
+  alt="Sort menu with Calories per serving high and low options"
+  className="help-screenshot"
+/>
 
 <Tip>
-  Nutrition information becomes more useful the more accurate your servings are. Before generating nutrition, double-check the recipe's servings so per-serving values are meaningful.
+  Nutrition information becomes more useful the more accurate your servings are.
+  Before generating nutrition, double-check the recipe's servings so per-serving
+  values are meaningful.
 </Tip>
 
 ---
