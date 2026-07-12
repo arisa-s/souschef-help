@@ -134,6 +134,25 @@ h2,
   max-width: 100%;
 }
 
+/* Phone screenshots — use instead of Tailwind width utilities */
+.help-screenshot {
+  display: block;
+  width: 9rem;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 1rem;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@media (min-width: 640px) {
+  .help-screenshot {
+    width: 12rem;
+  }
+}
+
 .help-search-shadow {
   box-shadow: 0 10px 25px -5px color-mix(in srgb, #9164bf 25%, transparent);
 }
