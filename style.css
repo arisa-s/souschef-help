@@ -3,3 +3,176 @@
 #header > .mt-2.text-lg {
   display: none;
 }
+
+/* Recoleta — brand accent (matches souschef-homepage --font-accent) */
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/fonts/Recoleta/RecoletaBlack.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Color tokens — matched to souschef-homepage/app/globals.css */
+:root {
+  --font-accent: "Recoleta", ui-serif, Georgia, "Times New Roman", serif;
+
+  --background: #fcfdfc;
+  --foreground: #141e12;
+  --brand-primary: #1c121e;
+  --brand-secondary: #24333c;
+  --accent: #9164bf;
+  --accent-soft: color-mix(in srgb, #9164bf 12%, white);
+  --accent-muted: color-mix(in srgb, #9164bf 22%, white);
+  --accent-wash: color-mix(in srgb, #9164bf 8%, white);
+
+  --neutral-0: #fcfdfc;
+  --neutral-50: #f8faf8;
+  --neutral-100: #f2f4f2;
+  --neutral-200: #ecefec;
+  --neutral-300: #e6e9e6;
+  --neutral-400: #e0e4e0;
+  --neutral-500: #c3c8c2;
+  --neutral-600: #8b918a;
+  --neutral-700: #818780;
+  --neutral-800: #6b716a;
+  --neutral-900: #141e12;
+
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-800);
+  --text-ternary: var(--neutral-500);
+  --text-invert: var(--neutral-100);
+  --text-error: #e02200;
+
+  --surface-primary: var(--neutral-0);
+  --surface-secondary: var(--neutral-100);
+  --surface-component: var(--brand-primary);
+  --surface-component-secondary: var(--neutral-100);
+  --border-primary: var(--neutral-600);
+}
+
+#background-color {
+  background-color: var(--background);
+}
+
+/* Compact site title in the top navbar */
+nav-logo {
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+#page-title,
+#header h1,
+h1,
+h2,
+.mdx-content h3,
+.mdx-content h4 {
+  color: var(--text-primary);
+}
+
+.mdx-content {
+  color: var(--text-primary);
+}
+
+.mdx-content a {
+  color: var(--brand-primary);
+}
+
+.font-accent,
+#page-title,
+#header h1,
+h1,
+h2,
+.mdx-content h3,
+.mdx-content h4 {
+  font-family: var(--font-accent);
+}
+
+/* Hero mascot — Mintlify doesn't ship all Tailwind width utilities (e.g. w-60) */
+.help-hero-mascot {
+  width: 15rem; /* same as Tailwind w-60 */
+  max-width: 100%;
+}
+
+.help-search-shadow {
+  box-shadow: 0 10px 25px -5px color-mix(in srgb, #9164bf 25%, transparent);
+}
+
+.help-cta-wash {
+  background: linear-gradient(
+    to bottom right,
+    var(--accent-muted),
+    var(--accent-wash),
+    color-mix(in srgb, #9164bf 16%, white)
+  );
+}
+
+/* Beat .mdx-content a color so primary CTA stays light-on-dark.
+   Mintlify icons use CSS masks + background-color for tint. */
+.mdx-content a.help-cta-primary,
+.mdx-content a.help-cta-primary:hover {
+  color: #fff;
+}
+
+.mdx-content a.help-cta-primary {
+  background-color: var(--brand-primary);
+}
+
+.mdx-content a.help-cta-primary:hover {
+  opacity: 0.9;
+}
+
+.mdx-content a.help-cta-primary span[style*="mask"],
+.mdx-content a.help-cta-primary span[style*="-webkit-mask"] {
+  background-color: #fff !important;
+}
+
+.mdx-content a.help-cta-secondary {
+  background-color: color-mix(in srgb, white 80%, transparent);
+  color: var(--text-primary);
+}
+
+.mdx-content a.help-cta-secondary:hover {
+  background-color: #fff;
+  color: var(--text-primary);
+}

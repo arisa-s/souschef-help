@@ -3,9 +3,9 @@
   "projectName": "Souschef",
   "projectDescription": "Souschef is a mobile recipe organizer that lets home cooks import recipes from Instagram, TikTok, YouTube, Pinterest, and recipe websites, then cook hands-free with smart timers, shopping lists, and step-by-step Cooking Mode.",
   "theme": "almond",
-  "primaryColor": "#1c0c1c",
-  "lightColor": null,
-  "darkColor": null,
+  "primaryColor": "#1c121e",
+  "lightColor": "#eeecee",
+  "darkColor": "#1c121e",
   "navigation": {
     "tabs": [
       {

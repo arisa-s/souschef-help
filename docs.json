@@ -2,83 +2,98 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "Souschef Help Center",
   "theme": "almond",
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
   "colors": {
-    "primary": "#1c0c1c"
+    "primary": "#1c121e",
+    "light": "#eeecee",
+    "dark": "#1c121e"
+  },
+  "background": {
+    "color": {
+      "light": "#fcfdfc",
+      "dark": "#262925"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Recoleta",
+      "source": "/fonts/Recoleta/RecoletaSemiBold.woff2",
+      "format": "woff2",
+      "weight": 600
+    }
   },
   "favicon": "https://media.brand.dev/669c2979-85ee-4b94-99ef-7e2d8d2461f8.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Help Center",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "getting-started/what-is-souschef",
-              "getting-started/import-your-first-recipe",
-              "getting-started/add-to-share-menu",
-              "getting-started/supported-devices"
-            ]
-          },
-          {
-            "group": "Importing Recipes",
-            "pages": [
-              "importing/supported-sources",
-              "importing/import-from-instagram",
-              "importing/import-from-tiktok",
-              "importing/import-from-youtube",
-              "importing/import-from-pinterest",
-              "importing/import-from-website",
-              "importing/import-from-photos",
-              "importing/why-import-fails"
-            ]
-          },
-          {
-            "group": "Using Souschef",
-            "pages": [
-              "using/organize-and-search",
-              "using/cooking-mode",
-              "using/timers",
-              "using/adjust-servings",
-              "using/convert-measurements",
-              "using/shopping-list",
-              "using/prep-checklist"
-            ]
-          },
-          {
-            "group": "Subscription & Billing",
-            "pages": [
-              "billing/free-plan",
-              "billing/import-limits",
-              "billing/subscription-benefits",
-              "billing/subscribe",
-              "billing/restore-purchase",
-              "billing/cancel",
-              "billing/refund",
-              "billing/after-cancellation"
-            ]
-          },
-          {
-            "group": "Account & Privacy",
-            "pages": [
-              "account/sign-in-another-device",
-              "account/reset-password",
-              "account/delete-account",
-              "account/data-storage",
-              "account/privacy"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "troubleshooting/import-failed",
-              "troubleshooting/missing-from-share-menu",
-              "troubleshooting/recipes-missing",
-              "troubleshooting/subscription-not-recognized",
-              "troubleshooting/app-not-loading",
-              "troubleshooting/contact-support"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "getting-started/what-is-souschef",
+          "getting-started/import-your-first-recipe",
+          "getting-started/add-to-share-menu",
+          "getting-started/supported-devices"
+        ]
+      },
+      {
+        "group": "Importing Recipes",
+        "pages": [
+          "importing/supported-sources",
+          "importing/import-from-instagram",
+          "importing/import-from-tiktok",
+          "importing/import-from-youtube",
+          "importing/import-from-pinterest",
+          "importing/import-from-website",
+          "importing/import-from-photos",
+          "importing/why-import-fails"
+        ]
+      },
+      {
+        "group": "Using Souschef",
+        "pages": [
+          "using/organize-and-search",
+          "using/cooking-mode",
+          "using/timers",
+          "using/adjust-servings",
+          "using/convert-measurements",
+          "using/shopping-list",
+          "using/prep-checklist"
+        ]
+      },
+      {
+        "group": "Subscription & Billing",
+        "pages": [
+          "billing/free-plan",
+          "billing/import-limits",
+          "billing/subscription-benefits",
+          "billing/subscribe",
+          "billing/restore-purchase",
+          "billing/cancel",
+          "billing/refund",
+          "billing/after-cancellation"
+        ]
+      },
+      {
+        "group": "Account & Privacy",
+        "pages": [
+          "account/sign-in-another-device",
+          "account/reset-password",
+          "account/delete-account",
+          "account/data-storage",
+          "account/privacy"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/import-failed",
+          "troubleshooting/missing-from-share-menu",
+          "troubleshooting/recipes-missing",
+          "troubleshooting/subscription-not-recognized",
+          "troubleshooting/app-not-loading",
+          "troubleshooting/contact-support"
         ]
       }
     ]
