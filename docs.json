@@ -44,9 +44,11 @@
           "importing/import-from-instagram",
           "importing/import-from-tiktok",
           "importing/import-from-youtube",
+          "importing/import-from-facebook",
           "importing/import-from-pinterest",
           "importing/import-from-website",
           "importing/import-from-photos",
+          "importing/import-from-plain-text",
           "importing/why-import-fails"
         ]
       },
@@ -59,7 +61,12 @@
           "using/adjust-servings",
           "using/convert-measurements",
           "using/shopping-list",
-          "using/prep-checklist"
+          "using/prep-checklist",
+          "using/pantry",
+          "using/managing-pantry",
+          "using/receipt-scanning",
+          "using/pantry-faq",
+          "using/nutrition"
         ]
       },
       {
