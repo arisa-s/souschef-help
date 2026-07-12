@@ -49,6 +49,7 @@
             "group": "Subscription & Billing",
             "pages": [
               "billing/free-plan",
+              "billing/import-limits",
               "billing/subscription-benefits",
               "billing/subscribe",
               "billing/restore-purchase",
