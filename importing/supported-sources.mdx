@@ -5,62 +5,60 @@ description: "Souschef can import recipes from Instagram, TikTok, YouTube, Pinte
 ---
 
 <div className="flex justify-center my-8">
-  <img
-    src="/images/mascots/laptop.webp"
-    alt="Sous the cat searching for recipes to save"
-    className="w-64 sm:w-96 h-auto"
-  />
+  <img src="/images/mascots/laptop.webp" alt="Sous the cat searching for recipes to save" className="w-64 sm:w-96 h-auto" />
 </div>
 
 {/* TODO: replace with a dedicated `magnifying-glass` mascot illustration once available */}
 
-Souschef can pull recipes from almost anywhere you find food inspiration — whether you're scrolling through social media, watching a cooking video, browsing a recipe blog, or flipping through a printed cookbook. In most cases, it's just a tap or two away. Here's a quick overview of every source Souschef currently supports, with links to detailed how-to guides for each one.
+Souschef can pull recipes from almost anywhere you find food inspiration — whether you're scrolling through social media, watching a cooking video, browsing a recipe blog, flipping through a printed cookbook, or copy-pasting a family favorite from a text message. In most cases, it's just a tap or two away. Here's every source Souschef currently supports, with links to detailed guides for each one.
 
 <CardGroup cols={2}>
   <Card title="Instagram" icon="instagram" href="/importing/import-from-instagram">
     Save recipe posts and reels directly from Instagram. Souschef reads the caption, comments, and video audio to extract the full recipe.
   </Card>
 
-<Card title="TikTok" icon="tiktok" href="/importing/import-from-tiktok">
-  Import TikTok recipe videos in four easy steps. Souschef scans the caption,
-  comments, and spoken audio to build a complete recipe.
-</Card>
+  <Card title="TikTok" icon="tiktok" href="/importing/import-from-tiktok">
+    Import TikTok recipe videos in four easy steps. Souschef scans the caption, comments, and spoken audio to build a complete recipe.
+  </Card>
 
-<Card title="YouTube" icon="youtube" href="/importing/import-from-youtube">
-  Turn any YouTube cooking video into a structured recipe with ingredients and
-  timestamped step-by-step instructions — powered by AI.
-</Card>
+  <Card title="Facebook" icon="facebook" href="/importing/import-from-facebook">
+    Save Facebook posts, videos, and reels through the share menu or by pasting a URL. Facebook recipes also appear in AI Discovery.
+  </Card>
 
-<Card
-  title="Pinterest"
-  icon="pinterest"
-  href="/importing/import-from-pinterest"
->
-  Browse recipes inside Souschef's built-in Pinterest explorer, or just paste a
-  pin URL to import instantly.
-</Card>
+  <Card title="YouTube" icon="youtube" href="/importing/import-from-youtube">
+    Turn any YouTube cooking video into a structured recipe with ingredients and timestamped step-by-step instructions — powered by AI.
+  </Card>
 
-<Card
-  title="Recipe Websites"
-  icon="globe"
-  href="/importing/import-from-website"
->
-  Paste a URL from any recipe blog or website and Souschef extracts the
-  ingredients and instructions automatically.
-</Card>
+  <Card title="Pinterest" icon="pinterest" href="/importing/import-from-pinterest">
+    Browse recipes inside Souschef's built-in Pinterest explorer, or just paste a pin URL to import instantly.
+  </Card>
+
+  <Card title="Recipe Websites" icon="globe" href="/importing/import-from-website">
+    Paste a URL from any recipe blog or website and Souschef extracts the ingredients and instructions automatically.
+  </Card>
 
   <Card title="Photos & Screenshots" icon="camera" href="/importing/import-from-photos">
     Digitize a cookbook, a printed recipe card, or a screenshot using Souschef's Scan feature — just point your camera and go.
   </Card>
+
+  <Card title="Plain Text" icon="clipboard" href="/importing/import-from-plain-text">
+    Paste recipe text and let AI extract the ingredients and steps, or create a recipe manually from scratch.
+  </Card>
 </CardGroup>
 
-## What about Facebook?
+## AI Discovery: search across sources at once
 
-Facebook recipe support is on our roadmap! We're actively working on adding it. In the meantime, if you spot a recipe on Facebook, you can always take a screenshot and use the [Scan feature](/importing/import-from-photos) to import it.
+Don't have a specific link? Use [AI Discovery](/using/ai-discovery) to describe what you're craving and Souschef will search across recipe websites, Instagram, TikTok, Facebook, and YouTube in one go — then let you import any result directly into your collection.
 
 ## How importing works
 
 Most sources work through your phone's **share sheet** — the menu that appears when you tap the Share button inside any app. Tap Share, find the Souschef icon, and the import kicks off automatically. If you don't see Souschef in your share sheet, check out [how to add Souschef to your share menu](/getting-started/add-to-share-menu).
+
+For sources without a share sheet flow — or when you just have text — use the **\+** button inside Souschef to paste a URL, paste recipe text, or create a recipe manually.
+
+<Note>
+  Every imported recipe gets [AI-suggested tags](/using/ai-tagging) (cuisine, meal type, diet, main ingredient, cooking method, and more) automatically. Nutrition data comes through when the source provides it, and you can [generate nutrition estimates](/using/nutrition) with AI when it doesn't.
+</Note>
 
 ---
 
@@ -72,9 +70,13 @@ Can't find what you're looking for? Our team is happy to help — [contact suppo
 
 - [Import from Instagram](/importing/import-from-instagram)
 - [Import from TikTok](/importing/import-from-tiktok)
+- [Import from Facebook](/importing/import-from-facebook)
 - [Import from YouTube](/importing/import-from-youtube)
 - [Import from Pinterest](/importing/import-from-pinterest)
 - [Import from a recipe website](/importing/import-from-website)
 - [Import from screenshots or photos](/importing/import-from-photos)
+- [Import from plain text](/importing/import-from-plain-text)
+- [AI Discovery](/using/ai-discovery)
+- [AI Tagging](/using/ai-tagging)
 - [Why a recipe import might fail](/importing/why-import-fails)
 - [Add Souschef to your share menu](/getting-started/add-to-share-menu)

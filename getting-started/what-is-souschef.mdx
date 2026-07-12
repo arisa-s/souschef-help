@@ -5,46 +5,74 @@ description: "Souschef is a free mobile app that lets you import, organize, and 
 ---
 
 <div className="flex justify-center my-10">
-  <img
-    src="/images/mascots/too-many-recipes.webp"
-    alt="Sous (left) and Chef (right), the Souschef cat mascots"
-    className="w-64 sm:w-96 h-auto"
-  />
+  <img src="/images/mascots/too-many-recipes.webp" alt="Sous (left) and Chef (right), the Souschef cat mascots" className="w-64 sm:w-96 h-auto" />
 </div>
 
-Too many recipes saved in too many places? Between Instagram posts, YouTube videos, browser bookmarks, screenshots, and scribbled notes, it’s easy for a great recipe to get lost. Souschef brings them all together in one free mobile app. Import any recipe in a few taps, keep everything organized, and cook with confidence using smart timers, adjustable servings, and a built-in shopping list.
+Too many recipes saved in too many places? Between Instagram posts, TikTok reels, Facebook shares, YouTube videos, browser bookmarks, screenshots, and scribbled notes, it's easy for a great recipe to get lost. Souschef brings them all together in one free mobile app. Import any recipe in a few taps, keep everything organized with AI-powered tags, and cook with confidence using Cooking Mode, smart timers, adjustable servings, a Pantry that skips duplicates on your shopping list, nutrition info, printable recipes, and AI-powered recipe search and translation.
 
 {/* TODO: replace with real screenshot of Souschef home screen showing a populated recipe collection */}
+
+## Popular articles
+
+<CardGroup cols={2}>
+  <Card title="Import your first recipe" icon="arrow-down-to-bracket" href="/getting-started/import-your-first-recipe">
+    A quick, guided walkthrough for saving your first recipe from any source.
+  </Card>
+
+  <Card title="How Pantry works" icon="jar" href="/using/pantry">
+    Track what's in your fridge, freezer, and pantry so your shopping list stops repeating itself.
+  </Card>
+
+  <Card title="AI Discovery" icon="wand-magic-sparkles" href="/using/ai-discovery">
+    Describe a craving and Souschef searches websites, Instagram, TikTok, Facebook, and YouTube for matching recipes.
+  </Card>
+
+  <Card title="Print recipes" icon="print" href="/using/print-recipes">
+    Print any recipe with your current servings, units, times, ingredients, numbered steps, and a QR code.
+  </Card>
+</CardGroup>
 
 ## What can Souschef do?
 
 <CardGroup cols={2}>
-  <Card title="Import from anywhere" icon="arrow-down-to-bracket">
-    Save recipes from Instagram, TikTok, YouTube, Pinterest, recipe websites, and even photos or screenshots — all in one tap.
+  <Card title="Import from anywhere" icon="arrow-down-to-bracket" href="/importing/supported-sources">
+    Save recipes from Instagram, TikTok, Facebook, YouTube, Pinterest, recipe websites, photos, screenshots, or pasted text — all in one tap.
   </Card>
 
-<Card title="Cook Mode" icon="utensils">
-  Follow along step-by-step with Cooking Mode. Your screen stays on, and
-  built-in smart timers keep everything on track.
-</Card>
+  <Card title="Cooking Mode" icon="utensils" href="/using/cooking-mode">
+    Follow along step-by-step with Cooking Mode. Your screen stays on, and built-in smart timers keep everything on track.
+  </Card>
 
-<Card title="Smart Shopping List" icon="cart-shopping">
-  Turn any recipe (or a whole week's worth) into a tidy, consolidated grocery
-  list — ready to take to the store.
-</Card>
+  <Card title="Smart Shopping List" icon="cart-shopping" href="/using/shopping-list">
+    Turn any recipe into a tidy, aisle-sorted grocery list. Items already in your Pantry are skipped automatically.
+  </Card>
 
-<Card title="Smart Timers" icon="timer">
-  Timers are built right into the recipe steps, so you never have to stop and
-  set them manually.
-</Card>
+  <Card title="Pantry" icon="jar" href="/using/pantry">
+    Track what's in your fridge, freezer, and pantry with manual entry, receipt scanning, or a photo of your shelves.
+  </Card>
 
-<Card title="Find your recipes fast" icon="magnifying-glass">
-  Search and browse your personal recipe collection whenever inspiration
-  strikes.
-</Card>
+  <Card title="AI Discovery" icon="wand-magic-sparkles" href="/using/ai-discovery">
+    Describe what you're craving and Souschef searches recipe websites, Instagram, TikTok, Facebook, and YouTube for matching recipes.
+  </Card>
 
-  <Card title="Adjust servings & measurements" icon="sliders">
+  <Card title="AI Tagging" icon="tags" href="/using/ai-tagging">
+    Every imported recipe gets AI-suggested tags for cuisine, meal type, diet, main ingredient, and cooking method.
+  </Card>
+
+  <Card title="Nutrition" icon="chart-pie" href="/using/nutrition">
+    See calories, protein, carbs, fat, and more. Missing nutrition? Generate an estimate with AI in one tap.
+  </Card>
+
+  <Card title="AI Translation" icon="language" href="/using/ai-translation">
+    Translate any recipe into 14 languages while preserving the original. A Souschef Plus feature.
+  </Card>
+
+  <Card title="Adjust servings & measurements" icon="sliders" href="/using/adjust-servings">
     Scale a recipe up or down and convert between measurement units — Souschef does the maths for you.
+  </Card>
+
+  <Card title="Print recipes" icon="print" href="/using/print-recipes">
+    Print any recipe with your current serving size, units, prep and cook times, numbered instructions, and a QR code.
   </Card>
 </CardGroup>
 
@@ -52,23 +80,24 @@ Too many recipes saved in too many places? Between Instagram posts, YouTube vide
 
 Souschef can pull recipes from a wide range of places, including:
 
-- **Recipe websites and food blogs** — almost any site with a structured recipe
-- **Instagram** — posts and reels
-- **TikTok** — recipe videos
-- **YouTube** — cooking videos
-- **Pinterest** — recipe pins
-- **Photos and screenshots** — snap or upload an image and Souschef will scan it for you
+- **Instagram** — [posts and reels](/importing/import-from-instagram)
+- **TikTok** — [recipe videos](/importing/import-from-tiktok)
+- **Facebook** — [posts, videos, and reels](/importing/import-from-facebook)
+- **YouTube** — [cooking videos](/importing/import-from-youtube)
+- **Pinterest** — [recipe pins](/importing/import-from-pinterest)
+- **Recipe websites and food blogs** — [almost any site](/importing/import-from-website)
+- **Photos and screenshots** — [scan any image](/importing/import-from-photos)
+- **Plain text** — [paste text or write manually](/importing/import-from-plain-text)
 
 <Info>
-  📸 Screenshot needed: the import source selection screen showing the available
-  options
+  📸 Screenshot needed: the import source selection screen showing all available options (Instagram, TikTok, Facebook, YouTube, Pinterest, URL, Photos, Paste text, Create manually).
 </Info>
 
 We're always working to expand support for more sources. If there's a platform you'd love to see added, drop us a note at [team@nekonote.co](mailto:team@nekonote.co).
 
 ## Is Souschef free?
 
-Yes! Souschef is free to download from both the Apple App Store and Google Play. All features are free at this time (subject to change in the future). There are no hidden fees or premium tiers to worry about right now — just download and start cooking.
+Yes! Souschef is free to download from both the Apple App Store and Google Play. Most features are free. Some advanced AI features — like [AI Recipe Translation](/using/ai-translation) — are part of **Souschef Plus**. See [subscription benefits](/billing/subscription-benefits) for what's included.
 
 ## Where is Souschef available?
 
@@ -89,3 +118,6 @@ Can't find what you're looking for? Our team is happy to help — head over to [
 
 - [Import your first recipe](/getting-started/import-your-first-recipe)
 - [Supported import sources](/importing/supported-sources)
+- [How Pantry works](/using/pantry)
+- [AI Discovery](/using/ai-discovery)
+- [Cooking Mode](/using/cooking-mode)
