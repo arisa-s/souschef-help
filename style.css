@@ -1,0 +1,5 @@
+/* Hide the frontmatter description under each article title.
+   Meta descriptions for SEO are unchanged. */
+#header > .mt-2.text-lg {
+  display: none;
+}
