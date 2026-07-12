@@ -1,11 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Souschef Help Center",
+  "projectType": "saas",
+  "projectName": "Souschef",
+  "projectDescription": "Souschef is a mobile recipe organizer that lets home cooks import recipes from Instagram, TikTok, YouTube, Pinterest, and recipe websites, then cook hands-free with smart timers, shopping lists, and step-by-step Cooking Mode.",
   "theme": "almond",
-  "colors": {
-    "primary": "#1c0c1c"
-  },
-  "favicon": "https://media.brand.dev/669c2979-85ee-4b94-99ef-7e2d8d2461f8.png",
+  "primaryColor": "#1c0c1c",
+  "lightColor": null,
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -82,14 +82,19 @@
       }
     ]
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Download App",
-      "href": "https://onelink.to/7jpeua"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Import recipes from Instagram, TikTok, YouTube, Pinterest, and recipe websites",
+    "Import from photos or screenshots using the Scan feature",
+    "Cooking Mode with step-by-step navigation and screen-keep-awake",
+    "Smart timers auto-extracted from recipe instructions",
+    "Serving size adjustment with automatic ingredient recalculation",
+    "Measurement conversion (e.g. cups to grams)",
+    "Smart Shopping List auto-sorted by store aisle, shareable",
+    "Preparation checklist for prep steps before cooking",
+    "Ingredient referencing while following a step",
+    "Multiple recipe window support",
+    "Japanese language interface and Japanese recipe import",
+    "Available on iOS (App Store) and Android (Google Play)"
+  ],
+  "publicApiSurface": []
 }
