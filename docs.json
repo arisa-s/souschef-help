@@ -57,20 +57,20 @@
         "pages": [
           "using/organize-and-search",
           "using/cooking-mode",
+          "using/prep-checklist",
           "using/timers",
           "using/adjust-servings",
           "using/convert-measurements",
           "using/shopping-list",
-          "using/prep-checklist",
           "using/pantry",
           "using/managing-pantry",
           "using/receipt-scanning",
           "using/pantry-faq",
+          "using/ai-tagging",
           "using/nutrition",
           "using/ai-discovery",
           "using/ai-translation",
-          "using/print-recipes",
-          "using/ai-tagging"
+          "using/print-recipes"
         ]
       },
       {
@@ -83,7 +83,8 @@
           "billing/restore-purchase",
           "billing/cancel",
           "billing/refund",
-          "billing/after-cancellation"
+          "billing/after-cancellation",
+          "billing/faq"
         ]
       },
       {
