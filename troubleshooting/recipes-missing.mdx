@@ -5,7 +5,11 @@ description: "If your saved recipes have disappeared from Souschef, find out why
 ---
 
 <div className="flex justify-center my-8">
-  <img src="/images/mascots/chef-looking-down.webp" alt="Chef the cat looking around, wondering where the recipes went" className="w-40 sm:w-52 h-auto dark:invert" />
+  <img
+    src="/images/mascots/chef-looking-down.webp"
+    alt="Chef the cat looking around, wondering where the recipes went"
+    className="w-32 sm:w-40 h-auto dark:invert"
+  />
 </div>
 
 {/* TODO: replace with `empty-recipe-inbox` illustration once available */}
@@ -13,7 +17,8 @@ description: "If your saved recipes have disappeared from Souschef, find out why
 If you open Souschef and your recipes aren't there, take a breath — they're most likely not gone! There are a few common reasons a recipe collection might appear empty or incomplete, and most of them are solved in just a step or two. Here's what to check.
 
 <Warning>
-  Recipes that were imported while not signed in may not sync to the cloud. Always sign in to make sure your collection is safely backed up.
+  Recipes that were imported while not signed in may not sync to the cloud.
+  Always sign in to make sure your collection is safely backed up.
 </Warning>
 
 <AccordionGroup>
@@ -27,12 +32,14 @@ If you open Souschef and your recipes aren't there, take a breath — they're mo
     3. Sign back in using the email address you originally used to save your recipes.
 
     Your recipes should reappear right away.
+
   </Accordion>
 
   <Accordion title="You're on a new device">
     Switched to a new phone? Your recipes are stored with your account, not on the device itself — so you just need to sign in to get them back.
 
     Sign in to Souschef on your new device using your existing account credentials, and your recipe collection should sync automatically. For more help with this, see [Sign in on another device](/account/sign-in-another-device).
+
   </Accordion>
 
   <Accordion title="The app needs to refresh">
@@ -43,11 +50,14 @@ If you open Souschef and your recipes aren't there, take a breath — they're mo
     3. Once the recipe list is visible, pull down from the top to trigger a manual refresh.
 
     If your recipes were there before, they should reappear after the refresh.
+
   </Accordion>
 
-  <Accordion title="The app was reinstalled">
-    If you deleted and reinstalled Souschef, your recipes aren't gone — they're still tied to your account in the cloud. Simply sign back in with the same account you used before, and your collection will be restored.
-  </Accordion>
+<Accordion title="The app was reinstalled">
+  If you deleted and reinstalled Souschef, your recipes aren't gone — they're
+  still tied to your account in the cloud. Simply sign back in with the same
+  account you used before, and your collection will be restored.
+</Accordion>
 
   <Accordion title="The recipes were saved locally and aren't syncing">
     If you believe your recipes may have been saved in an offline or local-only mode, please [contact our support team](mailto:support@nekonote.co) and we'll help you figure out what happened and whether those recipes can be recovered.
