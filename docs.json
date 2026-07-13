@@ -63,8 +63,6 @@
           "using/convert-measurements",
           "using/shopping-list",
           "using/pantry",
-          "using/managing-pantry",
-          "using/receipt-scanning",
           "using/pantry-faq",
           "using/ai-tagging",
           "using/nutrition",
@@ -117,6 +115,16 @@
       "href": "https://onelink.to/7jpeua"
     }
   },
+  "redirects": [
+    {
+      "source": "/using/managing-pantry",
+      "destination": "/using/pantry"
+    },
+    {
+      "source": "/using/receipt-scanning",
+      "destination": "/using/pantry"
+    }
+  ],
   "footer": {
     "socials": {}
   }

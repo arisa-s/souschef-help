@@ -4,6 +4,12 @@ sidebarTitle: "Timers"
 description: "Souschef automatically detects times mentioned in recipe steps and lets you start a countdown with one tap — no switching apps needed."
 ---
 
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+This feature is included in the free version of Souschef.
+
 When a recipe step says something like "bake for 25 minutes" or "let the dough rest for 1 hour," Souschef highlights that time as a tappable timer. No more unlocking your phone, hunting for the clock app, and trying to remember what you just read — everything stays right where you're cooking.
 
 ## Starting a timer
@@ -12,21 +18,50 @@ Timers live right inside [Cooking Mode](/using/cooking-mode), so they're always 
 
 <Steps>
   <Step title="Look for highlighted time mentions">
-    As you follow along in Cooking Mode, look for **highlighted time mentions** in the step text — these appear as tappable buttons.
+    As you follow along in Cooking Mode, look for **highlighted time mentions** in the step text — these appear underlined with a timer icon.
 
-    <Info>
-      📸 Screenshot needed: A cooking step with a time mention (e.g., "bake for 25 minutes") highlighted as a tappable button.
-    </Info>
+    <img
+      src="/images/screenshots/timers/timer-in-step.webp"
+      alt="Cooking Mode step with bake for 1 hour highlighted as a tappable timer"
+      className="help-screenshot"
+    />
   </Step>
   <Step title="Tap the highlighted time">
-    Tap the highlighted time to start a countdown instantly.
+    Tap the highlighted time to open the timer controls. Confirm the duration, then tap play to start the countdown.
 
-    <Info>
-      📸 Screenshot needed: Timer countdown running inside Cooking Mode after being tapped.
-    </Info>
+    <img
+      src="/images/screenshots/timers/timer-controls.webp"
+      alt="Cooking Mode with a one-hour Bake timer ready to start and a play button"
+      className="help-screenshot"
+    />
   </Step>
   <Step title="Keep cooking">
     The timer runs directly in the app — you never have to leave your recipe to manage it.
+  </Step>
+</Steps>
+
+## Add a timer manually
+
+You can also create a timer when a recipe doesn't include a time mention, or when you want a custom countdown:
+
+<Steps>
+  <Step title="Tap the timer button">
+    In Cooking Mode, tap the timer button (clock with a plus) at the top of the screen.
+
+    <img
+      src="/images/screenshots/timers/add-timer-button.webp"
+      alt="Cooking Mode with the add timer button highlighted"
+      className="help-screenshot"
+    />
+  </Step>
+  <Step title="Set the duration and start">
+    Enter the time with the keypad (or tap **+ 30** to add 30 seconds), optionally name the timer, then tap **Start**.
+
+    <img
+      src="/images/screenshots/timers/timer-sheet.webp"
+      alt="Untitled timer sheet with time display, numeric keypad, Reset, and Start"
+      className="help-screenshot"
+    />
   </Step>
 </Steps>
 
@@ -38,17 +73,9 @@ Many recipes have overlapping steps, and Souschef handles that gracefully:
 - All active timers stay visible without leaving Cooking Mode, so you can keep an eye on everything at a glance.
 - If you open a [second recipe window](/using/cooking-mode#during-cooking), your timers continue running in the background.
 
-<Info>
-  📸 Screenshot needed: Multiple timers running simultaneously inside Cooking Mode.
-</Info>
-
 <Tip>
   If a recipe has overlapping steps, start the longer timer first so both finish close together — it makes timing your meal much easier!
 </Tip>
-
-<Info>
-  Timers are automatically extracted from recipe instructions. TODO: Confirm whether a manual timer option is available in the app for cases where a time is not automatically detected.
-</Info>
 
 ---
 

@@ -14,8 +14,10 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Shopping Lists, Pantry, AI features, account, and subscriptions
+- **Web version** / **lightweight web viewer**: browser experience for viewing shared recipe links only (view recipe, adjust servings, switch measurement systems)
+- Do not say Souschef is "mobile-only" or that there is "no web version"
+- Preferred framing: "Souschef has a lightweight web version for viewing shared recipes. To import recipes, organize your library, and access the full feature set, use the iOS or Android app."
 
 ## Style preferences
 
@@ -26,6 +28,28 @@
 - Use sentence case for headings
 - Bold for UI elements: Click **Settings**
 - Code formatting for file names, commands, paths, and code references
+
+### Feature availability badges
+
+Almost every product feature is available on the free plan. Souschef Plus is primarily for unlimited recipe imports and an ad-free import experience.
+
+On major feature pages, place a linked availability badge immediately below the title:
+
+```mdx
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+```
+
+For Souschef Plus pages (`subscription-benefits`, `subscribe`):
+
+```mdx
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="star" color="yellow" shape="pill">Souschef Plus</Badge>
+</a>
+```
+
+Do **not** label Cooking Mode, Shopping Lists, Pantry, Nutrition, AI features, printing, servings, measurement conversion, timers, organization, sharing, or import sources as Plus-only.
 
 ## Content boundaries
 

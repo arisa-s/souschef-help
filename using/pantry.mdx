@@ -1,8 +1,14 @@
 ---
-title: "How Pantry works in Souschef — track what's in your kitchen"
+title: "Pantry in Souschef — an experimental way to track long-lasting ingredients"
 sidebarTitle: "Pantry"
-description: "Souschef's Pantry keeps track of the ingredients you already own. Organize by location, add expiration dates, and skip duplicates on your shopping list."
+description: "Pantry is an experimental feature for tracking long-lasting ingredients you already have. Learn when it's useful, how it works with Shopping Lists, and how to share feedback."
 ---
+
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+Good news — Pantry is available to everyone using Souschef.
 
 <div className="flex justify-center my-10">
   <img
@@ -12,104 +18,83 @@ description: "Souschef's Pantry keeps track of the ingredients you already own. 
   />
 </div>
 
-Souschef's Pantry keeps track of what you already have in your kitchen — in the fridge, freezer, or pantry — so you stop buying duplicates and stop guessing what you can cook tonight. Add items by typing them in, scanning a grocery receipt, or snapping a photo of what's on your shelf, then let Souschef quietly check every recipe you cook against what you already own.
+Pantry is an experimental feature for keeping a simple list of ingredients you already have. It is still evolving — and it works best when you treat it as a lightweight reminder, not a full inventory system.
 
-## Why use Pantry?
+## When Pantry is useful
 
-<CardGroup cols={2}>
-  <Card title="Never buy duplicates" icon="cart-shopping">
-    Ingredients already in your Pantry are automatically skipped when you generate a [shopping list](/using/shopping-list) from a recipe.
-  </Card>
+Pantry is most practical for long-lasting ingredients that stay in your kitchen for weeks or months. Think of it as a place to remember the staples you tend to forget you already own.
 
-<Card title="See what you have at a glance" icon="list">
-  Your Pantry is organized by location and category so you always know what's in
-  the fridge without opening it.
-</Card>
+Good fits include:
 
-<Card title="Track expiration dates" icon="calendar">
-  Add optional expiration dates so nothing gets pushed to the back of the shelf
-  and forgotten.
-</Card>
+- Spices and herbs
+- Sauces, oils, and condiments
+- Baking staples
+- Dry pantry items (rice, pasta, canned goods, and similar)
 
-  <Card title="Add items your way" icon="plus">
-    Type items in one at a time, scan a receipt from a shopping trip, or take a photo of your shelves — whatever's fastest for you.
-  </Card>
-</CardGroup>
+If you mostly cook with the same shelf-stable staples, Pantry can help you skip those items when you generate a [shopping list](/using/shopping-list).
 
-## Pantry locations
+## How it works with Shopping Lists
 
-Every Pantry item lives in one of three locations, so you can tell at a glance where an ingredient is stored:
+When you [generate a shopping list](/using/shopping-list) from a recipe, Souschef checks ingredients against your Pantry:
 
-- **Fridge** — chilled ingredients like dairy, produce, opened jars.
-- **Freezer** — frozen produce, meat, batches you meal-prepped.
-- **Pantry** — shelf-stable items like grains, cans, spices, oils.
+- Matching ingredients are marked with an **In Pantry** badge
+- Those ingredients are not added to the shopping list automatically
+- You can still add them manually if you're running low
 
-<Info>
-  📸 Screenshot needed: the Pantry home view with tabs or filters for Fridge,
-  Freezer, and Pantry locations.
-</Info>
+<img
+  src="/images/screenshots/pantry/in-pantry-badge.webp"
+  alt="Add to List sheet with Miso marked In pantry and excluded from the shopping list"
+  className="help-screenshot"
+/>
 
-## Categories and expiration dates
+## How to add ingredients
 
-Within each location, items are grouped into **categories** — produce, dairy, meat, grains, spices, and more — so a stocked kitchen never looks overwhelming.
+The most reliable way to use Pantry today is to add items manually. Tap the **+** button in Pantry, type the ingredient name, and choose a location if you want.
 
-Each item can also have an optional **expiration date**. Expiration dates are entirely optional, but adding them means Souschef can surface what's about to expire so nothing goes to waste.
+You can also organize items by location (Fridge, Freezer, or Pantry) and edit or remove them anytime.
 
-<Info>
-  📸 Screenshot needed: a Pantry item detail view showing location, category,
-  quantity, and expiration date fields.
-</Info>
+### Experimental ways to add items
 
-## Add items to your Pantry
+Pantry also supports:
 
-There are three ways to add items — pick whichever fits the moment.
+- **Receipt scanning** — photograph a grocery receipt and review detected items before adding them
+- **Pantry photos** — photograph a shelf or fridge and review detected ingredients before adding them
 
-<Tabs>
-  <Tab title="Type it in">
-    Tap the **\+** button in Pantry, type the item name, choose a location and category, and (optionally) add a quantity and expiration date. Great for one-off additions or when you're mid-cooking.
-  </Tab>
-  <Tab title="Scan a receipt">
-    Just got home from the grocery store? Snap a photo of your receipt and Souschef will read the items and add them to your Pantry automatically. See [Receipt Scanning](/using/receipt-scanning) for details.
-  </Tab>
-  <Tab title="Pantry photo recognition">
-    Open your fridge, snap a photo, and Souschef uses AI to detect the ingredients it sees and offer them for you to add. Perfect for a first-time Pantry setup.
+These workflows are still experimental. They can be interesting to try, but we do not recommend them as part of an everyday routine yet.
 
-    <Info>
-      📸 Screenshot needed: a phone photo of a fridge shelf with detected items highlighted, ready to add to the Pantry.
-    </Info>
+## What Pantry is not (yet)
 
-  </Tab>
-</Tabs>
+Pantry is not a finished inventory management system. A few current limitations:
 
-## Pantry \+ Shopping List integration
+- It does not automatically stay up to date as you cook or shop
+- Continuously updating it after every grocery trip often adds more effort than value
+- Receipt scanning and pantry photos are experimental, not everyday tools
 
-This is where Pantry starts saving you real time and money. When you [generate a shopping list](/using/shopping-list) from a recipe:
+You do not need to track everything you buy. Fresh produce and other short-lived ingredients change too often to be worth the upkeep for most people.
 
-- Ingredients you **already have** in your Pantry are **not** automatically added to the shopping list.
-- Any matching ingredient still shown in the recipe is marked with an **In Pantry** badge, so you can see at a glance what you're covered for.
-- If you'd rather add something anyway (say, you're running low), you can override the skip and add it manually.
+## Why some people skip tracking everything
 
-<Info>
-  📸 Screenshot needed: the shopping list generation screen with an ingredient
-  displaying the 'In Pantry' badge.
-</Info>
+For many cooks, a complete kitchen inventory creates more maintenance than benefit. Pantry works best when you keep it small — a short list of staples that tend to stick around.
 
-## After shopping: keep your Pantry up to date
-
-When you get home from the store, open Souschef and [scan your receipt](/using/receipt-scanning). Souschef reads the line items, matches them to your Pantry, and updates your inventory in seconds — no manual entry required.
+If maintaining Pantry feels like a chore, use it less or skip it entirely. Shopping Lists and the rest of Souschef work fine without it.
 
 <Tip>
-  Even if you only stock the essentials in your Pantry — oil, salt, common
-  spices, staples like rice and pasta — you'll immediately notice a shorter,
-  smarter shopping list. Start small and add items over time.
+  Start with spices, oils, sauces, and a few dry staples. That small set is
+  often enough to make shopping lists a bit smarter without much upkeep.
 </Tip>
+
+## Help shape Pantry
+
+Pantry is one of Souschef's newest experimental features, and we're still exploring the best way to make it genuinely useful.
+
+If you have ideas, workflows, or pain points you'd like Pantry to solve, we'd love to hear from you. Your feedback will directly influence where the feature goes next.
+
+[Contact us →](/troubleshooting/contact-support)
 
 ---
 
 ## Related articles
 
-- [Managing your Pantry](/using/managing-pantry)
-- [Receipt Scanning](/using/receipt-scanning)
 - [Pantry FAQ](/using/pantry-faq)
 - [Shopping List](/using/shopping-list)
 

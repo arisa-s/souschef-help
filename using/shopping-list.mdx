@@ -4,13 +4,19 @@ sidebarTitle: "Shopping List"
 description: "Turn any recipe into a grocery list with one tap. Souschef automatically organizes items by store section and lets you share the list."
 ---
 
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+This feature is included in the free version of Souschef.
+
 {/* TODO: replace with a dedicated `shopping-cart` mascot illustration once available — spec calls for one here */}
 
 <div className="flex justify-center my-8">
   <img src="/images/mascots/shopping-cart.webp" alt="Sous the cat — off to the grocery store" className="w-64 sm:w-96 h-auto" />
 </div>
 
-Souschef's Smart Shopping List turns your recipes into an organized grocery list in seconds. Better yet, it automatically sorts everything by store aisle — dairy with dairy, produce with produce — so you can move through the store in one smooth loop without doubling back. And if you use [Pantry](/using/pantry), any ingredient you already have is skipped automatically, so your list only shows what you actually need to buy. Say goodbye to the scattered, hard-to-read notes you used to bring to the grocery store!
+Souschef's Smart Shopping List turns your recipes into an organized grocery list in seconds. Better yet, it automatically sorts everything by store aisle — dairy with dairy, produce with produce — so you can move through the store in one smooth loop without doubling back. And if you use [Pantry](/using/pantry), matching ingredients can be skipped automatically, so your list focuses on what you still need. Say goodbye to the scattered, hard-to-read notes you used to bring to the grocery store!
 
 ## Create a shopping list from a recipe
 
@@ -19,52 +25,114 @@ Souschef's Smart Shopping List turns your recipes into an organized grocery list
     Make sure the recipe you want to shop for is already saved in Souschef. If you haven't imported it yet, check out [Import your first recipe](/getting-started/import-your-first-recipe) to get started.
   </Step>
   <Step title="Tap Add to Shopping List">
-    Open the recipe and tap the **Add to Shopping List** button.
+    Open the recipe and tap the **Add to List** button.
 
-    <Info>
-      📸 Screenshot needed: Recipe detail view with the Add to Shopping List button highlighted.
-    </Info>
+    <img
+      src="/images/screenshots/shopping-list/add-to-list-button.webp"
+      alt="Recipe detail with the Add to List button highlighted"
+      className="help-screenshot"
+    />
+
   </Step>
   <Step title="Adjust the serving size">
     Choose how many servings you're making — the ingredient quantities will update automatically to match.
 
-    <Info>
-      📸 Screenshot needed: Serving size adjustment screen shown before adding items to the shopping list.
-    </Info>
+    <img
+      src="/images/screenshots/shopping-list/add-to-list-sheet.webp"
+      alt="Add to List sheet with servings highlighted and ingredients selected"
+      className="help-screenshot"
+    />
+
   </Step>
   <Step title="Review the 'In Pantry' badges">
-    If you use [Pantry](/using/pantry), Souschef automatically checks the recipe against what you already own. Ingredients already in your Pantry are marked with an **In Pantry** badge and are **not** added to the shopping list. You can still add them manually if you're running low.
+    If you use [Pantry](/using/pantry), Souschef checks the recipe against ingredients you've added there. Matching items are marked with an **In Pantry** badge and are **not** added to the shopping list. You can still add them manually if you're running low.
 
     You can also uncheck any other ingredient you already have on hand — anything unchecked is skipped from the list.
-
-    <Info>
-      📸 Screenshot needed: Ingredient checklist showing an ingredient with the 'In Pantry' badge next to it, and other items unchecked.
-    </Info>
   </Step>
   <Step title="Tap Add items">
     Hit the **Add items** button and your shopping list is ready — automatically sorted by store aisle so you can shop efficiently.
 
-    <Info>
-      📸 Screenshot needed: Completed shopping list sorted by store aisle (e.g., Produce, Dairy, Spices).
-    </Info>
+    <img
+      src="/images/screenshots/shopping-list/shopping-list-sorted.webp"
+      alt="Shopping list sorted by aisle with Baking and Miscellaneous sections"
+      className="help-screenshot"
+    />
+
   </Step>
 </Steps>
 
 <Tip>
-  Keeping your [Pantry](/using/pantry) up to date is the easiest way to avoid buying duplicates. Scan your grocery receipt after each shopping trip and Souschef will automatically skip those ingredients on future shopping lists.
+  [Pantry](/using/pantry) works best as a lightweight list of long-lasting
+  staples — spices, oils, sauces, and dry goods — rather than a complete
+  inventory you update after every grocery trip.
 </Tip>
-
-## After shopping: scan your receipt
-
-Just got home from the store? Scan your grocery receipt to update your [Pantry](/using/pantry) inventory automatically — no manual entry needed. See [Receipt Scanning](/using/receipt-scanning).
 
 ## Add multiple recipes at once
 
-Planning meals for the whole week? No problem. Just repeat the steps above for each recipe you want to cook. Souschef will **merge all the ingredients together** — so if two recipes both need garlic, it combines them into a single line item. One tidy list, multiple meals.
+Planning meals for the whole week? You can keep adding recipes to the same list. Souschef **merges ingredients together** — so if two recipes both need garlic, it combines them into a single line item.
+
+<Steps>
+  <Step title="Tap Edit">
+    Open your shopping list and tap **Edit**.
+
+    <img
+      src="/images/screenshots/shopping-list/edit-button.webp"
+      alt="Shopping list with the Edit button highlighted"
+      className="help-screenshot"
+    />
+
+  </Step>
+  <Step title="Tap Add Recipe Ingredients">
+    Tap **Add Recipe Ingredients**.
+
+    <img
+      src="/images/screenshots/shopping-list/add-recipe-ingredients-button.webp"
+      alt="Edit shopping list with Add Recipe Ingredients highlighted"
+      className="help-screenshot"
+    />
+
+  </Step>
+  <Step title="Choose a recipe">
+    Pick a recipe from your library, then select the ingredients you need — same as when you add from a recipe detail page.
+
+    <img
+      src="/images/screenshots/shopping-list/add-recipes-sheet.webp"
+      alt="Add recipes to shopping list sheet showing saved recipes"
+      className="help-screenshot"
+    />
+
+  </Step>
+</Steps>
 
 ## Add non-recipe items
 
-Your shopping trip isn't just about dinner — you might need paper towels, dish soap, or a snack for the kids too. Tap the **add** button on your shopping list to type in any item that isn't part of a recipe. Everything stays in one place.
+Your shopping trip isn't just about dinner — you might need paper towels, dish soap, or a snack for the kids too. Add those manually so everything stays in one place.
+
+<Steps>
+  <Step title="Tap Edit">
+    Open your shopping list and tap **Edit**.
+  </Step>
+  <Step title="Tap Add Items Manually">
+    Tap **Add Items Manually**.
+
+    <img
+      src="/images/screenshots/shopping-list/add-items-manually-button.webp"
+      alt="Edit shopping list with Add Items Manually highlighted"
+      className="help-screenshot"
+    />
+
+  </Step>
+  <Step title="Type your item">
+    Enter the item name under **Misc**, then tap **Done**.
+
+    <img
+      src="/images/screenshots/shopping-list/add-item-manually.webp"
+      alt="Editing the shopping list with a Misc item field ready to type"
+      className="help-screenshot"
+    />
+
+  </Step>
+</Steps>
 
 ## Share your list
 
@@ -73,13 +141,23 @@ Sending someone else to the store? Or want to coordinate with a partner?
 <Steps>
   <Step title="Tap Share">
     Tap **Share** on your shopping list.
+
+    <img
+      src="/images/screenshots/shopping-list/share-button.webp"
+      alt="Shopping list with the Share button highlighted"
+      className="help-screenshot"
+    />
+
   </Step>
   <Step title="Send it">
     Send it via text message or any messaging app on your phone.
 
-    <Info>
-      📸 Screenshot needed: Share sheet appearing from the shopping list with messaging apps visible.
-    </Info>
+    <img
+      src="/images/screenshots/shopping-list/share-via-messages.webp"
+      alt="Messages compose screen with a shopping list checklist ready to send"
+      className="help-screenshot"
+    />
+
   </Step>
 </Steps>
 
@@ -95,7 +173,7 @@ If you have questions or run into anything unexpected, our team is happy to help
 
 **Related articles**
 
-- [How Pantry works](/using/pantry)
-- [Receipt Scanning](/using/receipt-scanning)
+- [Pantry](/using/pantry)
+- [Pantry FAQ](/using/pantry-faq)
 - [Adjust recipe servings](/using/adjust-servings)
 - [How to use Cooking Mode](/using/cooking-mode)

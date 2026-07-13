@@ -1,10 +1,24 @@
 ---
-title: "Use Cooking Mode in Souschef for hands-free cooking"
+title: "Use Cooking Mode in Souschef for step-by-step cooking"
 sidebarTitle: "Cooking Mode"
-description: "Cooking Mode guides you through a recipe step by step, keeps your screen awake, and manages timers so you can cook without distractions."
+description: "Cooking Mode guides you through a recipe step by step, keeps your screen awake, and manages timers so you can cook with fewer screen taps."
 ---
 
-Cooking Mode is the heart of Souschef — it transforms any recipe into a hands-free cooking assistant right on your phone. It's designed to tackle all those little frustrations that come with cooking from a mobile device: a screen that dims at the worst moment, juggling a separate timer app, losing track of ingredient quantities mid-step. Cooking Mode handles all of it so you can focus on what actually matters — the food.
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+Good news — Cooking Mode is available to everyone using Souschef.
+
+<div className="flex justify-center my-10">
+  <img
+    src="/images/mascots/mitten-made-from-scratch.webp"
+    alt="Sous the cat ready to cook, oven mitten on"
+    className="w-64 sm:w-96 h-auto"
+  />
+</div>
+
+Cooking Mode is the heart of Souschef — it turns any recipe into a step-by-step cooking guide on your phone. It isn't fully hands-free yet, but it cuts down how often you need to touch the screen. It tackles common mobile cooking frustrations: a screen that dims at the worst moment, juggling a separate timer app, losing track of ingredient quantities mid-step. Cooking Mode handles all of that so you can focus on the food.
 
 ## What Cooking Mode does
 
@@ -14,7 +28,7 @@ Cooking Mode is the heart of Souschef — it transforms any recipe into a hands-
   </Card>
 
   <Card title="Keeps your screen awake" icon="sun">
-    Your phone stays lit the entire time you're in Cooking Mode — no more tapping the screen with floury hands.
+    Your phone stays lit the entire time you're in Cooking Mode — so you tap less just to keep the screen on.
   </Card>
 
   <Card title="Smart timers" icon="clock">
@@ -43,31 +57,33 @@ Cooking Mode is the heart of Souschef — it transforms any recipe into a hands-
 <Steps>
   <Step title="Open a recipe">
     Tap any recipe in your Souschef library to open it.
-
-    <Info>
-      📸 Screenshot needed: Recipe library with a recipe card tapped/highlighted.
-    </Info>
   </Step>
-  <Step title="Tap the Cook button">
-    Tap the **Cook** button to launch Cooking Mode.
+  <Step title="Tap Step by Step">
+    Tap **Step by Step** to launch Cooking Mode.
 
-    <Info>
-      📸 Screenshot needed: Recipe detail view with the Cook button visible and highlighted.
-    </Info>
+    <img
+      src="/images/screenshots/cooking-mode/step-by-step-button.webp"
+      alt="Recipe detail with the Step by Step button highlighted"
+      className="help-screenshot"
+    />
   </Step>
   <Step title="Complete the prep checklist">
-    Before the first cooking step, you'll see a checklist of all the prep tasks for this recipe. Work through the list — chop, dice, preheat, measure — and check each item off as you go.
+    Before the first cooking step, you'll see a checklist of all the prep tasks for this recipe — including things like preheating the oven. Work through the list and check each item off as you go.
 
-    <Info>
-      📸 Screenshot needed: Prep checklist screen shown at the start of Cooking Mode with items being checked off.
-    </Info>
+    <img
+      src="/images/screenshots/cooking-mode/prep-and-preheat.webp"
+      alt="Cooking Mode showing the Prep Ingredients and Preheat Oven checklist with tasks like thinly sliced onions and grated parmesan"
+      className="help-screenshot"
+    />
   </Step>
   <Step title="Follow the steps">
-    Tap **Next** to move through each cooking step at your own pace. Souschef guides you from start to finish.
+    Tap **Next** to move through each cooking step at your own pace. Souschef guides you from start to finish. Tap a highlighted time mention to start a [timer](/using/timers) without leaving the recipe.
 
-    <Info>
-      📸 Screenshot needed: A cooking step in Cooking Mode showing step text with a tappable timer and Next button.
-    </Info>
+    <img
+      src="/images/screenshots/cooking-mode/cooking-step.webp"
+      alt="Cooking Mode step with bake for 1 hour highlighted as a tappable timer"
+      className="help-screenshot"
+    />
   </Step>
 </Steps>
 
@@ -75,12 +91,70 @@ Cooking Mode is the heart of Souschef — it transforms any recipe into a hands-
 
 Once you're in Cooking Mode, here are a few handy things you can do:
 
-- **Check an ingredient quantity** — Tap any ingredient name mentioned in a step to see how much you need. Quantities automatically reflect your chosen serving size.
-- **Start a timer** — When a step mentions a time (like "simmer for 10 minutes"), tap it to kick off a countdown right in the app. No need to switch to a separate timer app.
-- **Open a second recipe** — Tap the multi-window button to open another recipe alongside your current one. Your timers keep running in the background the whole time.
+### Adjust servings
+
+Tap the servings control at the top to scale the recipe while you cook. Ingredient quantities update automatically.
+
+<img
+  src="/images/screenshots/cooking-mode/servings-button.webp"
+  alt="Cooking Mode with the servings button highlighted"
+  className="help-screenshot"
+/>
+
+### Convert measurements
+
+Tap the convert units button (beaker icon) to switch between measurement systems without leaving Cooking Mode.
+
+<img
+  src="/images/screenshots/cooking-mode/convert-units-button.webp"
+  alt="Cooking Mode with the convert units button highlighted"
+  className="help-screenshot"
+/>
+
+### Check an ingredient quantity
+
+Tap any highlighted ingredient name in a step to see how much you need. From there you can also search for more info, find a substitution, or locate it in a supermarket.
+
+<img
+  src="/images/screenshots/cooking-mode/ingredient-detail.webp"
+  alt="Ingredient detail sheet for onions with options to search on Google, search substitution, or locate it in supermarket"
+  className="help-screenshot"
+/>
+
+### View the full ingredients list
+
+Tap the list icon to open the full ingredients checklist with quantities.
+
+<img
+  src="/images/screenshots/cooking-mode/ingredients-list-button.webp"
+  alt="Cooking Mode with the ingredients list button highlighted in the bottom bar"
+  className="help-screenshot"
+/>
+
+### Start a timer
+
+When a step mentions a time (like "simmer for 10 minutes"), tap it to kick off a countdown right in the app. You can also add a timer manually with the timer button. See [How recipe timers work](/using/timers) for details.
+
+### Open a second recipe
+
+Tap the multi-window button to open another recipe alongside your current one. Your timers keep running in the background the whole time.
+
+<img
+  src="/images/screenshots/cooking-mode/open-other-recipe-button.webp"
+  alt="Cooking Mode with the open other recipe button highlighted"
+  className="help-screenshot"
+/>
+
+From there, tap **+ Add Recipe Tab** to open another recipe, or **Finish Cooking** when you're done.
+
+<img
+  src="/images/screenshots/cooking-mode/multi-recipe-view.webp"
+  alt="Cooking Mode multi-recipe view with Finish Cooking and Add Recipe Tab buttons"
+  className="help-screenshot"
+/>
 
 <Tip>
-  Your phone screen stays awake the entire time you're in Cooking Mode — no more tapping to wake it up mid-recipe!
+  Your phone screen stays awake the entire time you're in Cooking Mode, so you don't have to keep waking it up mid-recipe.
 </Tip>
 
 ---

@@ -1,14 +1,24 @@
 ---
 title: "How to import a YouTube cooking video into Souschef"
 sidebarTitle: "From YouTube"
-description: "Souschef's YouTube recipe extractor uses AI to turn any cooking video into a structured recipe with ingredients and timestamped steps."
+description: "Souschef's YouTube recipe extractor uses AI to turn any cooking video or Short into a structured recipe with ingredients and timestamped steps."
 ---
 
-Ever wished you could cook along with a YouTube recipe without constantly pausing, rewinding, and squinting at the screen? Souschef uses AI to turn any YouTube cooking video into a fully structured recipe — complete with an ingredient list, step-by-step instructions with timestamps, and smart timers. Just share the video to Souschef and let it do the heavy lifting.
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+Importing from YouTube is included in the free version of Souschef.
+
+Ever wished you could cook along with a YouTube recipe without constantly pausing, rewinding, and squinting at the screen? Souschef uses AI to turn any YouTube cooking video — including YouTube Shorts — into a fully structured recipe complete with an ingredient list, step-by-step instructions with timestamps, and smart timers. Share a video to Souschef, or browse YouTube inside the app — then let it do the heavy lifting.
+
+<Note>
+  Souschef extracts recipe information from the video's description and, when available, the spoken audio. If the recipe isn't described in either source, the imported recipe may be incomplete.
+</Note>
 
 ## What you get from a YouTube import
 
-When you import a YouTube cooking video, Souschef reads the video title, description, comments, and the video itself to extract everything you need:
+When you import a YouTube cooking video, Souschef extracts recipe information from the video's title, description, and spoken audio when available:
 
 - **Ingredient list** — scalable to any serving size, with easy measurement conversions
 - **Step-by-step instructions with video timestamps** — jump straight to any moment in the video without scrubbing around
@@ -17,20 +27,105 @@ When you import a YouTube cooking video, Souschef reads the video title, descrip
 
 ## How to import a recipe from YouTube
 
-<Steps>
-  <Step title="Open YouTube and find a cooking video">
-    Browse YouTube and find the cooking video you'd like to import into Souschef.
-  </Step>
-  <Step title="Tap the Share button">
-  </Step>
-  <Step title="Select Souschef from the share sheet">
-  </Step>
-  <Step title="Wait while Souschef analyzes the video">
-    Souschef will analyze the video's title, description, comments, and content using AI. This may take a moment depending on the length of the video — just keep the app open.
-  </Step>
-  <Step title="Review and save the extracted recipe">
-  </Step>
-</Steps>
+There are three ways to import a YouTube cooking video. Pick whichever works best for you.
+
+<Tabs>
+  <Tab title="Method 1: Share from YouTube">
+    Already watching a cooking video in the YouTube app? Share it straight to Souschef.
+
+    <Steps>
+      <Step title="Open YouTube and find a cooking video">
+        Browse YouTube and find the cooking video or Short you'd like to import into Souschef.
+      </Step>
+      <Step title="Tap the Share button">
+        Tap **Share** below the video.
+
+        <img
+          src="/images/screenshots/youtube/share-button.webp"
+          alt="YouTube video with the Share button highlighted"
+          className="help-screenshot"
+        />
+      </Step>
+      <Step title="Select Souschef from the share sheet">
+        Tap the **Souschef** icon in the share sheet. Souschef will open and start extracting the recipe automatically.
+
+        Don't see Souschef in the share sheet? Follow [Add Souschef to your share menu](/getting-started/add-to-share-menu).
+      </Step>
+      <Step title="Wait while Souschef analyzes the video">
+        Souschef will extract the recipe from the video's description and spoken audio when available. This may take a moment depending on the length of the video — just keep the app open.
+      </Step>
+      <Step title="Review and save the extracted recipe">
+        Check the ingredients and steps, make any edits you want, then save the recipe to your collection.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Method 2: YouTube Browser">
+    Prefer to stay in Souschef? Use the built-in YouTube Recipe Browser to find and import videos without leaving the app.
+
+    <Steps>
+      <Step title="Tap the '+' button in Souschef">
+        Open Souschef and tap the **\+** button at the bottom of your collection.
+      </Step>
+      <Step title="Tap Browse">
+        On the import screen, tap **Browse**.
+
+        <img
+          src="/images/screenshots/youtube/browse.webp"
+          alt="Import Recipe screen with the Browse button highlighted"
+          className="help-screenshot"
+        />
+      </Step>
+      <Step title="Select YouTube">
+        In the **Search on:** menu, tap **YouTube** to open the Recipe Browser.
+
+        <img
+          src="/images/screenshots/youtube/select-youtube.webp"
+          alt="Search on menu with YouTube highlighted"
+          className="help-screenshot"
+        />
+      </Step>
+      <Step title="Find a cooking video">
+        Search or browse YouTube inside the Recipe Browser until you open the cooking video you want.
+
+        <img
+          src="/images/screenshots/youtube/recipe-browser.webp"
+          alt="Recipe Browser showing the YouTube search screen"
+          className="help-screenshot"
+        />
+      </Step>
+      <Step title="Tap Import Recipe">
+        When you're on a recipe video, the button at the bottom right becomes **Import Recipe**. Tap it to start the import.
+
+        <img
+          src="/images/screenshots/youtube/import-recipe.webp"
+          alt="Recipe Browser on a YouTube recipe video with Import Recipe highlighted"
+          className="help-screenshot"
+        />
+      </Step>
+      <Step title="Wait while Souschef analyzes the video">
+        Souschef will extract the recipe from the video's description and spoken audio when available. Keep the app open until it's done.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Method 3: Paste a URL">
+    Already have a YouTube link you want to save? You can paste the URL directly into Souschef.
+
+    <Steps>
+      <Step title="Copy the video URL">
+        In the YouTube app or in your browser, open the cooking video and copy its URL.
+      </Step>
+      <Step title="Open Souschef and tap '+'">
+        Open Souschef and tap the **\+** button at the bottom of your collection.
+      </Step>
+      <Step title="Tap Import from URL">
+        Select **Import from URL** from the options.
+      </Step>
+      <Step title="Paste the URL and tap Import">
+        Paste the YouTube URL and tap **Import**. Souschef will extract the recipe and add it to your collection.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
 <Info>
   Souschef plays the original YouTube video in the background whenever you're cooking from that recipe, so the creator gets credit for every view. It's a great way to support the people whose recipes you love!

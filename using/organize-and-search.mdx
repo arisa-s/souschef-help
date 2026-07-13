@@ -4,8 +4,18 @@ sidebarTitle: "Organize & Search"
 description: "Keep all your recipes in one place with Souschef. Search by name, browse your collection, and find any recipe in seconds — even offline."
 ---
 
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+Good news — organizing and searching your recipes is available to everyone using Souschef.
+
 <div className="flex justify-center my-8">
-  <img src="/images/mascots/collection.webp" alt="Sous the cat helping you organize your recipes" className="w-32 sm:w-40 h-auto" />
+  <img
+    src="/images/mascots/collection.webp"
+    alt="Sous the cat helping you organize your recipes"
+    className="w-32 sm:w-40 h-auto"
+  />
 </div>
 
 {/* TODO: replace with a dedicated `collection` mascot illustration once available */}
@@ -20,9 +30,12 @@ Finding a recipe takes just a few taps:
   <Step title="Open the search bar">
     Open Souschef and tap the **search bar** at the top of your recipe list.
 
-    <Info>
-      📸 Screenshot needed: Home screen with the search bar highlighted at the top of the recipe list.
-    </Info>
+    <img
+      src="/images/screenshots/organize/search-typing.webp"
+      alt="Saved recipes screen with the Search Recipes bar focused and the keyboard open"
+      className="help-screenshot"
+    />
+
   </Step>
   <Step title="Type a keyword">
     Type a dish name, a main ingredient, or anything you remember about the recipe.
@@ -30,49 +43,65 @@ Finding a recipe takes just a few taps:
   <Step title="Find your recipe">
     Results appear as you type, so you'll usually spot what you're looking for before you even finish typing.
 
-    <Info>
-      📸 Screenshot needed: Search results updating in real time as the user types a keyword.
-    </Info>
+    <img
+      src="/images/screenshots/organize/search-result.webp"
+      alt="Saved recipes search results for pumpkin showing Pumpkin Mochi Cookies"
+      className="help-screenshot"
+    />
+
   </Step>
 </Steps>
 
 <Tip>
-  Give your recipes descriptive names when saving so they're easy to find later. For example, "Mom's Chicken Tikka Masala" is much easier to search for than just "Chicken."
+  Give your recipes descriptive names when saving so they're easy to find later.
+  For example, "Mom's Chicken Tikka Masala" is much easier to search for than
+  just "Chicken."
 </Tip>
 
 ## Browsing your recipe collection
 
-All of your saved recipes are displayed in the main view when you open the app. Scroll through your collection to browse what you've got on hand.
+All of your saved recipes are displayed in the main view when you open the app. Scroll through your collection to browse what you've got on hand. Use the **Saved**, **Collections**, and **Imported** tabs at the top to switch views.
 
-<Info>
-  📸 Screenshot needed: Main recipe list view showing a collection of saved recipes.
-</Info>
+Tap **Collections** to group recipes into custom lists — like desserts or weekday meals — then open a collection anytime from that tab.
+
+<img
+  src="/images/screenshots/organize/collections.webp"
+  alt="Collections tab showing dessert and weekday meal collections"
+  className="help-screenshot"
+/>
+
+## Sort your recipes
+
+Tap the **sort** button next to the search bar to change how your library is ordered.
+
+<img
+  src="/images/screenshots/organize/sort-button.webp"
+  alt="Saved recipes screen with the sort button highlighted next to the search bar"
+  className="help-screenshot"
+/>
+
+Choose from:
+
+- **Date added** (newest or oldest)
+- **Last updated** (newest or oldest)
+- **Title** (a → z or z → a)
+- **Calories per serving** (high or low)
 
 ## Filter by tag
 
-Every imported recipe gets [AI-suggested tags](/using/ai-tagging) — cuisine, meal type, diet, main ingredient, cooking method, and more. Use the filter drawer above your library to narrow the list to just the recipes that match.
+Every imported recipe gets [AI-suggested tags](/using/ai-tagging) — cuisine, meal type, diet, main ingredient, cooking method, and more. Tap the **filter** button next to the search bar to open the filter drawer and narrow the list to just the recipes that match.
 
-Common combinations:
+<img
+  src="/images/screenshots/organize/filter-button.webp"
+  alt="Saved recipes screen with the filter button highlighted next to the search bar"
+  className="help-screenshot"
+/>
 
-- **Vegetarian \+ Dinner** — an instant weeknight shortlist.
-- **Italian \+ Pasta** — everything you have saved from that Sunday sauce era.
-- **Quick \+ Kid-friendly** — realistic weeknight ideas.
-
-<Info>
-  📸 Screenshot needed: the library filter drawer open, showing tag categories (cuisine, meal type, diet, main ingredient, cooking method).
-</Info>
+You can also filter by **source** (Instagram, YouTube, TikTok, or Web), **website**, ingredient count, and ready time.
 
 ## Filter by calories
 
-Cooking lighter tonight? Use the **calories per serving** filter to show only recipes below a certain number. Nutrition data comes from source websites when available, and can be [generated with AI](/using/nutrition) for any recipe that's missing it.
-
-<Info>
-  📸 Screenshot needed: the library with the calories-per-serving filter active.
-</Info>
-
-<Info>
-  TODO: Confirm if Souschef supports sorting options (e.g., by date added, alphabetically) in the recipe list view, and whether folders or collections exist alongside tags.
-</Info>
+Cooking lighter tonight? In the same filter drawer, use the **calories per serving** slider to show only recipes in a certain range. Nutrition data comes from source websites when available, and can be [generated with AI](/using/nutrition) for any recipe that's missing it.
 
 ---
 

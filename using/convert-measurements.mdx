@@ -4,19 +4,43 @@ sidebarTitle: "Convert Measurements"
 description: "Switch between cups and grams, ounces and milliliters, and more — directly inside Souschef. Convert ingredient amounts on the fly as you cook."
 ---
 
-Not everyone cooks in the same units — and that's perfectly fine! Souschef lets you convert ingredient measurements on the fly so you can cook in whatever units feel most natural to you. Found a great recipe from a UK food blog that uses grams? No problem. Following an American recipe but you only own a kitchen scale? Souschef has you covered.
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+This feature is included in the free version of Souschef.
+
+Not everyone cooks in the same units — and that's perfectly fine! Souschef lets you convert ingredient measurements on the fly so you can cook in whatever units feel most natural to you. Found a great recipe from a UK food blog that uses grams? No problem. Following an American recipe but you only own a kitchen scale? Souschef has you covered. Shared recipe links also let viewers switch between supported measurement systems (Metric, US Customary, and more) in the browser.
 
 ## How to convert measurements
 
-**Tap an ingredient quantity** — Tap directly on an ingredient's amount to see conversion options for that ingredient.
+<Steps>
+  <Step title="Open a recipe">
+    Tap any recipe in your Souschef library to open it.
+  </Step>
+  <Step title="Tap Convert Units">
+    On the **Ingredients** tab, tap **Convert Units**.
 
-<Info>
-  📸 Screenshot needed: Ingredient list with a quantity tapped, showing conversion options (e.g., cups to grams).
-</Info>
+    <img
+      src="/images/screenshots/convert-measurements/convert-units-button.webp"
+      alt="Recipe detail with the Convert Units button highlighted on the Ingredients tab"
+      className="help-screenshot"
+    />
 
-<Info>
-  TODO: Confirm the exact location and behavior of any whole-recipe unit toggle in the current app UI (e.g., switching the entire recipe between imperial and metric at once).
-</Info>
+  </Step>
+  <Step title="Set your preference and apply">
+    Choose your base measurement system (**Imperial** or **Metric**), optionally select cooking tools you own so common units like cups or teaspoons stay unconverted, then tap **Apply**.
+
+    <img
+      src="/images/screenshots/convert-measurements/measurement-preference-sheet.webp"
+      alt="Measurement Preference sheet with Imperial selected and tbsp/tsp and cup tools selected"
+      className="help-screenshot"
+    />
+
+  </Step>
+</Steps>
+
+Turn on **Show recipes in original units** if you want to keep each recipe in the units it was imported with.
 
 <Info>
   Conversions are calculated based on standard cooking measurements. For the most accurate results with dry ingredients like flour or cocoa powder, a kitchen scale is always your best bet — volume measurements can vary depending on how tightly packed the ingredient is.
@@ -40,3 +64,4 @@ If you have questions or run into anything unexpected, our team is happy to help
 - [How to use Cooking Mode](/using/cooking-mode)
 - [Print a recipe](/using/print-recipes)
 - [AI Recipe Translation](/using/ai-translation)
+- [Supported devices](/getting-started/supported-devices)

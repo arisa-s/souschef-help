@@ -118,6 +118,20 @@ h2,
   color: var(--brand-primary);
 }
 
+/* Availability badges wrap in <a> — kill the default link underline */
+.mdx-content a.help-availability-badge,
+.mdx-content a.help-availability-badge:hover,
+.mdx-content a.help-availability-badge:focus {
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.mdx-content a.help-availability-badge {
+  display: inline-flex;
+}
+
 .font-accent,
 #page-title,
 #header h1,

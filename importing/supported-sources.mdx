@@ -4,8 +4,18 @@ sidebarTitle: "Supported Sources"
 description: "Souschef can import recipes from Instagram, TikTok, Facebook, YouTube, Pinterest, recipe websites, photos, and pasted text. Here's a full overview."
 ---
 
+<a href="/billing/free-plan" className="help-availability-badge">
+  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
+</a>
+
+Recipe imports are available on the free plan (up to 3 per week). Souschef Plus removes the weekly limit.
+
 <div className="flex justify-center my-8">
-  <img src="/images/mascots/laptop.webp" alt="Sous the cat searching for recipes to save" className="w-64 sm:w-96 h-auto" />
+  <img
+    src="/images/mascots/laptop.webp"
+    alt="Sous the cat searching for recipes to save"
+    className="w-64 sm:w-96 h-auto"
+  />
 </div>
 
 {/* TODO: replace with a dedicated `magnifying-glass` mascot illustration once available */}
@@ -14,32 +24,50 @@ Souschef can pull recipes from almost anywhere you find food inspiration — whe
 
 <CardGroup cols={2}>
   <Card title="Instagram" icon="instagram" href="/importing/import-from-instagram">
-    Save recipe posts and reels directly from Instagram. Souschef reads the caption, comments, and video audio to extract the full recipe.
+    Save recipe posts and reels directly from Instagram. Souschef extracts from the caption and spoken audio when available.
   </Card>
 
-  <Card title="TikTok" icon="tiktok" href="/importing/import-from-tiktok">
-    Import TikTok recipe videos in four easy steps. Souschef scans the caption, comments, and spoken audio to build a complete recipe.
-  </Card>
+<Card title="TikTok" icon="tiktok" href="/importing/import-from-tiktok">
+  Import TikTok recipe videos in four easy steps. Souschef extracts from the
+  caption and spoken audio when available.
+</Card>
 
-  <Card title="Facebook" icon="facebook" href="/importing/import-from-facebook">
-    Save Facebook posts, videos, and reels through the share menu or by pasting a URL. Facebook recipes also appear in AI Discovery.
-  </Card>
+<Card title="Facebook" icon="facebook" href="/importing/import-from-facebook">
+  Save Facebook posts, videos, and reels through the share menu or by pasting a
+  URL. Facebook recipes also appear in AI Discovery.
+</Card>
 
-  <Card title="YouTube" icon="youtube" href="/importing/import-from-youtube">
-    Turn any YouTube cooking video into a structured recipe with ingredients and timestamped step-by-step instructions — powered by AI.
-  </Card>
+<Card title="YouTube" icon="youtube" href="/importing/import-from-youtube">
+  Turn any YouTube cooking video into a structured recipe with ingredients and
+  timestamped step-by-step instructions — powered by AI.
+</Card>
 
-  <Card title="Pinterest" icon="pinterest" href="/importing/import-from-pinterest">
-    Browse recipes inside Souschef's built-in Pinterest explorer, or just paste a pin URL to import instantly.
-  </Card>
+<Card
+  title="Pinterest"
+  icon="pinterest"
+  href="/importing/import-from-pinterest"
+>
+  Browse recipes inside Souschef's built-in Pinterest explorer, or just paste a
+  pin URL to import instantly.
+</Card>
 
-  <Card title="Recipe Websites" icon="globe" href="/importing/import-from-website">
-    Paste a URL from any recipe blog or website and Souschef extracts the ingredients and instructions automatically.
-  </Card>
+<Card
+  title="Recipe Websites"
+  icon="globe"
+  href="/importing/import-from-website"
+>
+  Paste a URL from any recipe blog or website and Souschef extracts the
+  ingredients and instructions automatically.
+</Card>
 
-  <Card title="Photos & Screenshots" icon="camera" href="/importing/import-from-photos">
-    Digitize a cookbook, a printed recipe card, or a screenshot using Souschef's Scan feature — just point your camera and go.
-  </Card>
+<Card
+  title="Photos & Screenshots"
+  icon="camera"
+  href="/importing/import-from-photos"
+>
+  Digitize a cookbook, a printed recipe card, or a screenshot using Souschef's
+  Scan feature — just point your camera and go.
+</Card>
 
   <Card title="Plain Text" icon="clipboard" href="/importing/import-from-plain-text">
     Paste recipe text and let AI extract the ingredients and steps, or create a recipe manually from scratch.
@@ -54,11 +82,13 @@ Don't have a specific link? Use [AI Discovery](/using/ai-discovery) to describe 
 
 Most sources work through your phone's **share sheet** — the menu that appears when you tap the Share button inside any app. Tap Share, find the Souschef icon, and the import kicks off automatically. If you don't see Souschef in your share sheet, check out [how to add Souschef to your share menu](/getting-started/add-to-share-menu).
 
-For sources without a share sheet flow — or when you just have text — use the **\+** button inside Souschef to paste a URL, paste recipe text, or create a recipe manually.
+For sources without a share sheet flow — or when you just have text — use the **\+** button inside Souschef to paste a URL, paste recipe text, take a screenshot and scan them, or create a recipe manually.
 
-<Note>
-  Every imported recipe gets [AI-suggested tags](/using/ai-tagging) (cuisine, meal type, diet, main ingredient, cooking method, and more) automatically. Nutrition data comes through when the source provides it, and you can [generate nutrition estimates](/using/nutrition) with AI when it doesn't.
-</Note>
+## Free plan import limit
+
+Free users can import up to **3 recipes per week**. Every recipe you import is yours to keep — recipes don't expire, and reaching the weekly limit only affects new imports. You can keep viewing, organizing, editing, searching, and cooking from everything already in your library.
+
+[Souschef Plus](/billing/subscription-benefits) removes the weekly import limit and ads from the recipe import process. See [Recipe import limits](/billing/import-limits) for details.
 
 ---
 
@@ -79,4 +109,5 @@ Can't find what you're looking for? Our team is happy to help — [contact suppo
 - [AI Discovery](/using/ai-discovery)
 - [AI Tagging](/using/ai-tagging)
 - [Why a recipe import might fail](/importing/why-import-fails)
+- [Recipe import limits](/billing/import-limits)
 - [Add Souschef to your share menu](/getting-started/add-to-share-menu)
