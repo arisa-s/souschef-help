@@ -149,6 +149,29 @@ h2,
   max-width: 100%;
 }
 
+/* Page mascot illustrations (not the index hero) */
+.help-illustration {
+  width: 7rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.help-illustration-sm {
+  width: 4.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .help-illustration {
+    width: 9rem;
+  }
+
+  .help-illustration-sm {
+    width: 6rem;
+  }
+}
+
 /* Phone screenshots — use instead of Tailwind width utilities */
 .help-screenshot {
   display: block;
