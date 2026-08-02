@@ -1,0 +1,15 @@
+import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
+
+{SUBSCRIPTION_ENABLED ? (
+  <a href="/billing/free-plan" className="help-availability-badge">
+    <Badge icon="circle-check" color="green" shape="pill">
+      Included in Free plan
+    </Badge>
+  </a>
+) : (
+  <span className="help-availability-badge">
+    <Badge icon="circle-check" color="green" shape="pill">
+      Free for now
+    </Badge>
+  </span>
+)}

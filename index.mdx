@@ -6,6 +6,8 @@ mode: "custom"
 hidden: true
 ---
 
+import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
+
 <div className="relative overflow-hidden">
   <div className="max-w-5xl mx-auto px-6 pt-16 pb-12 sm:pt-24 sm:pb-16 text-center">
     <div className="flex justify-center mb-6">
@@ -24,7 +26,7 @@ hidden: true
       <button id="search-bar-entry" type="button" className="help-search-shadow w-full flex items-center gap-3 bg-white border border-gray-200 rounded-full px-5 sm:px-6 py-4 text-left hover:outline hover:outline-[#9164bf] transition">
         <Icon icon="magnifying-glass" iconType="regular" />
 
-        <span className="flex-1 text-base sm:text-lg text-gray-400">Search for “import from TikTok”, “cancel subscription”…</span>
+        <span className="flex-1 text-base sm:text-lg text-gray-400">{SUBSCRIPTION_ENABLED ? 'Search for “import from TikTok”, “cancel subscription”…' : 'Search for “import from TikTok”, “Cooking Mode”…'}</span>
         <kbd className="hidden sm:inline-flex items-center gap-1 text-xs text-gray-400 border border-gray-200 rounded-md px-2 py-1">⌘K</kbd>
       </button>
 
@@ -74,6 +76,7 @@ hidden: true
       <p className="text-gray-600 text-sm">Find, sort, and organize your growing recipe collection.</p>
     </a>
 
+    {SUBSCRIPTION_ENABLED && (
     <a href="/billing/subscription-benefits" className="group block rounded-3xl bg-white border border-gray-100 p-7 shadow-sm hover:shadow-xl transition-all no-underline">
       <div className="w-12 h-12 rounded-2xl bg-violet-100 text-violet-600 flex items-center justify-center mb-4 text-xl">
         <Icon icon="credit-card" iconType="solid" />
@@ -82,6 +85,7 @@ hidden: true
       <h3 className="text-lg font-semibold text-gray-900 mb-1">Subscription & Billing</h3>
       <p className="text-gray-600 text-sm">Plans, subscribing, canceling, refunds, and receipts.</p>
     </a>
+    )}
 
     <a href="/troubleshooting/contact-support" className="group block rounded-3xl bg-white border border-gray-100 p-7 shadow-sm hover:shadow-xl transition-all no-underline">
       <div className="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center mb-4 text-xl">
@@ -96,6 +100,7 @@ hidden: true
 </div>
 
 <div className="max-w-6xl mx-auto px-6 pt-14 pb-4">
+  {SUBSCRIPTION_ENABLED ? (
   <a
     href="/billing/free-plan"
     className="block rounded-3xl bg-white border border-gray-100 p-7 sm:p-8 shadow-sm hover:shadow-xl transition-all no-underline"
@@ -114,6 +119,22 @@ hidden: true
       recipe imports and an ad-free import experience.
     </p>
   </a>
+  ) : (
+  <div className="block rounded-3xl bg-white border border-gray-100 p-7 sm:p-8 shadow-sm">
+    <div className="flex items-center gap-2 mb-3">
+      <span className="text-xl text-emerald-500" aria-hidden="true">
+        <Icon icon="circle-check" iconType="solid" />
+      </span>
+      <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
+        Souschef is free for now
+      </h2>
+    </div>
+    <p className="text-gray-600 max-w-3xl mb-0">
+      You can import recipes, organize your library, and use the full feature
+      set without a subscription.
+    </p>
+  </div>
+  )}
 </div>
 
 <div className="max-w-6xl mx-auto px-6 pt-14 pb-4">
@@ -124,7 +145,9 @@ hidden: true
     <a href="/importing/import-from-instagram" className="flex items-center justify-between gap-4 rounded-2xl bg-white border border-gray-100 px-5 py-4 hover:shadow-md transition no-underline"><span className="font-medium text-gray-900">Import a recipe from Instagram</span><Icon icon="arrow-right" iconType="regular" /></a>
     <a href="/using/cooking-mode" className="flex items-center justify-between gap-4 rounded-2xl bg-white border border-gray-100 px-5 py-4 hover:shadow-md transition no-underline"><span className="font-medium text-gray-900">Cook step‑by‑step with Cooking Mode</span><Icon icon="arrow-right" iconType="regular" /></a>
     <a href="/using/shopping-list" className="flex items-center justify-between gap-4 rounded-2xl bg-white border border-gray-100 px-5 py-4 hover:shadow-md transition no-underline"><span className="font-medium text-gray-900">Build a shopping list from a recipe</span><Icon icon="arrow-right" iconType="regular" /></a>
+    {SUBSCRIPTION_ENABLED && (
     <a href="/billing/cancel" className="flex items-center justify-between gap-4 rounded-2xl bg-white border border-gray-100 px-5 py-4 hover:shadow-md transition no-underline"><span className="font-medium text-gray-900">Cancel your subscription</span><Icon icon="arrow-right" iconType="regular" /></a>
+    )}
   </div>
 </div>
 

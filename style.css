@@ -118,7 +118,7 @@ h2,
   color: var(--brand-primary);
 }
 
-/* Availability badges wrap in <a> — kill the default link underline */
+/* Availability badges — kill the default link underline; span used when subscription is off */
 .mdx-content a.help-availability-badge,
 .mdx-content a.help-availability-badge:hover,
 .mdx-content a.help-availability-badge:focus {
@@ -128,7 +128,8 @@ h2,
   color: inherit;
 }
 
-.mdx-content a.help-availability-badge {
+.mdx-content a.help-availability-badge,
+.mdx-content span.help-availability-badge {
   display: inline-flex;
 }
 

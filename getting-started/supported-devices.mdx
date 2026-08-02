@@ -4,6 +4,9 @@ sidebarTitle: "Supported Devices"
 description: "Get the full Souschef experience on iPhone, iPad, and Android. Shared recipe links also open in a lightweight web viewer in any browser."
 ---
 
+import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
+import IsSouschefFreeShort from "/snippets/IsSouschefFreeShort.mdx";
+
 The full Souschef experience is available as a free app for **iOS** and **Android**. Shared recipe links also open in a lightweight web viewer, so anyone can read a recipe in their browser without installing the app.
 
 ## iOS (iPhone & iPad)
@@ -52,16 +55,18 @@ The web version is intended for viewing and sharing recipes with people who don'
 
 The full Souschef experience is available only in the iOS and Android apps. Features that currently require the mobile app include:
 
-- Importing recipes
-- Organizing your recipe library
-- [Cooking Mode](/using/cooking-mode)
-- [Shopping Lists](/using/shopping-list)
-- [Pantry](/using/pantry)
-- [AI Discovery](/using/ai-discovery)
-- [AI Translation](/using/ai-translation)
-- [AI Tagging](/using/ai-tagging)
-- Account management
-- Subscription management
+<ul>
+  <li>Importing recipes</li>
+  <li>Organizing your recipe library</li>
+  <li><a href="/using/cooking-mode">Cooking Mode</a></li>
+  <li><a href="/using/shopping-list">Shopping Lists</a></li>
+  <li><a href="/using/pantry">Pantry</a></li>
+  <li><a href="/using/ai-discovery">AI Discovery</a></li>
+  <li><a href="/using/ai-translation">AI Translation</a></li>
+  <li><a href="/using/ai-tagging">AI Tagging</a></li>
+  <li>Account management</li>
+  {SUBSCRIPTION_ENABLED && <li>Subscription management</li>}
+</ul>
 
 ## Frequently asked questions
 
@@ -89,17 +94,7 @@ The full Souschef experience is available only in the iOS and Android apps. Feat
   </Accordion>
 
   <Accordion title="Is Souschef free?">
-    Yes! Souschef is free to download and includes almost all of its features.
-
-    Free users can import up to **3 recipes each week** and may see ads during recipe imports. Every recipe you import is yours to keep — recipes don't expire, and the weekly limit only affects new imports.
-
-    [Souschef Plus](/billing/subscription-benefits) removes the weekly import limit and provides an ad-free import experience.
-
-    Souschef Plus also helps support ongoing development of the app.
-
-    Most features—including Cooking Mode, Shopping Lists, Pantry, Nutrition, AI Tagging, AI Recipe Translation, AI Discovery, and recipe organization—are available on the free plan.
-
-    See [Free vs Souschef Plus](/billing/free-plan) for a complete comparison.
+    <IsSouschefFreeShort />
   </Accordion>
 </AccordionGroup>
 
@@ -111,7 +106,13 @@ Have a question that's not answered here? Head over to [Contact Support](/troubl
 
 **Related articles:**
 
-- [What is Souschef?](/getting-started/what-is-souschef)
-- [Import your first recipe](/getting-started/import-your-first-recipe)
-- [Free vs Souschef Plus](/billing/free-plan)
-- [Souschef Plus subscription benefits](/billing/subscription-benefits)
+<ul>
+  <li><a href="/getting-started/what-is-souschef">What is Souschef?</a></li>
+  <li><a href="/getting-started/import-your-first-recipe">Import your first recipe</a></li>
+  {SUBSCRIPTION_ENABLED && (
+    <>
+      <li><a href="/billing/free-plan">Free vs Souschef Plus</a></li>
+      <li><a href="/billing/subscription-benefits">Souschef Plus subscription benefits</a></li>
+    </>
+  )}
+</ul>

@@ -72,20 +72,6 @@
         ]
       },
       {
-        "group": "Subscription & Billing",
-        "pages": [
-          "billing/free-plan",
-          "billing/import-limits",
-          "billing/subscription-benefits",
-          "billing/subscribe",
-          "billing/restore-purchase",
-          "billing/cancel",
-          "billing/refund",
-          "billing/after-cancellation",
-          "billing/faq"
-        ]
-      },
-      {
         "group": "Account & Privacy",
         "pages": [
           "account/sign-in-another-device",
@@ -101,7 +87,6 @@
           "troubleshooting/import-failed",
           "troubleshooting/missing-from-share-menu",
           "troubleshooting/recipes-missing",
-          "troubleshooting/subscription-not-recognized",
           "troubleshooting/app-not-loading",
           "troubleshooting/contact-support"
         ]

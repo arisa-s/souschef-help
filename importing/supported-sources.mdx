@@ -4,11 +4,14 @@ sidebarTitle: "Supported Sources"
 description: "Souschef can import recipes from Instagram, TikTok, Facebook, YouTube, Pinterest, recipe websites, photos, and pasted text. Here's a full overview."
 ---
 
-<a href="/billing/free-plan" className="help-availability-badge">
-  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
-</a>
+import AvailabilityBadge from "/snippets/AvailabilityBadge.mdx";
+import ImportAvailabilityNote from "/snippets/ImportAvailabilityNote.mdx";
+import FreePlanImportLimit from "/snippets/FreePlanImportLimit.mdx";
+import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
 
-Recipe imports are available on the free plan (up to 3 per week). Souschef Plus removes the weekly limit.
+<AvailabilityBadge />
+
+<ImportAvailabilityNote />
 
 <div className="flex justify-center my-8">
   <img
@@ -84,11 +87,7 @@ Most sources work through your phone's **share sheet** — the menu that appears
 
 For sources without a share sheet flow — or when you just have text — use the **\+** button inside Souschef to paste a URL, paste recipe text, take a screenshot and scan them, or create a recipe manually.
 
-## Free plan import limit
-
-Free users can import up to **3 recipes per week**. Every recipe you import is yours to keep — recipes don't expire, and reaching the weekly limit only affects new imports. You can keep viewing, organizing, editing, searching, and cooking from everything already in your library.
-
-[Souschef Plus](/billing/subscription-benefits) removes the weekly import limit and ads from the recipe import process. See [Recipe import limits](/billing/import-limits) for details.
+{SUBSCRIPTION_ENABLED && <FreePlanImportLimit />}
 
 ---
 
@@ -98,16 +97,20 @@ Can't find what you're looking for? Our team is happy to help — [contact suppo
 
 ## Related articles
 
-- [Import from Instagram](/importing/import-from-instagram)
-- [Import from TikTok](/importing/import-from-tiktok)
-- [Import from Facebook](/importing/import-from-facebook)
-- [Import from YouTube](/importing/import-from-youtube)
-- [Import from Pinterest](/importing/import-from-pinterest)
-- [Import from a recipe website](/importing/import-from-website)
-- [Import from screenshots or photos](/importing/import-from-photos)
-- [Import from plain text](/importing/import-from-plain-text)
-- [AI Discovery](/using/ai-discovery)
-- [AI Tagging](/using/ai-tagging)
-- [Why a recipe import might fail](/importing/why-import-fails)
-- [Recipe import limits](/billing/import-limits)
-- [Add Souschef to your share menu](/getting-started/add-to-share-menu)
+<ul>
+  <li><a href="/importing/import-from-instagram">Import from Instagram</a></li>
+  <li><a href="/importing/import-from-tiktok">Import from TikTok</a></li>
+  <li><a href="/importing/import-from-facebook">Import from Facebook</a></li>
+  <li><a href="/importing/import-from-youtube">Import from YouTube</a></li>
+  <li><a href="/importing/import-from-pinterest">Import from Pinterest</a></li>
+  <li><a href="/importing/import-from-website">Import from a recipe website</a></li>
+  <li><a href="/importing/import-from-photos">Import from screenshots or photos</a></li>
+  <li><a href="/importing/import-from-plain-text">Import from plain text</a></li>
+  <li><a href="/using/ai-discovery">AI Discovery</a></li>
+  <li><a href="/using/ai-tagging">AI Tagging</a></li>
+  <li><a href="/importing/why-import-fails">Why a recipe import might fail</a></li>
+  {SUBSCRIPTION_ENABLED && (
+    <li><a href="/billing/import-limits">Recipe import limits</a></li>
+  )}
+  <li><a href="/getting-started/add-to-share-menu">Add Souschef to your share menu</a></li>
+</ul>

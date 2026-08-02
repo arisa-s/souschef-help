@@ -14,10 +14,28 @@
 
 ## Terminology
 
-- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Shopping Lists, Pantry, AI features, account, and subscriptions
+- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Shopping Lists, Pantry, AI features, account, and (when enabled) subscriptions
 - **Web version** / **lightweight web viewer**: browser experience for viewing shared recipe links only (view recipe, adjust servings, switch measurement systems)
 - Do not say Souschef is "mobile-only" or that there is "no web version"
 - Preferred framing: "Souschef has a lightweight web version for viewing shared recipes. To import recipes, organize your library, and access the full feature set, use the iOS or Android app."
+
+## Subscription feature flag
+
+Pricing and subscription docs are gated by `SUBSCRIPTION_ENABLED` in `snippets/flags.mdx`.
+
+- **`false` (current):** Say the app is free for now. Hide billing pages and subscription copy. Feature badges show **Free for now**.
+- **`true`:** Show Souschef Plus pricing, billing docs, import limits, and **Included in Free plan** badges.
+
+When flipping the flag to `true`, also:
+
+1. Restore nav from `snippets/subscription-nav.json` into `docs.json` (Billing group + `troubleshooting/subscription-not-recognized`)
+2. Remove `hidden: true` and `noindex: true` from every file in `billing/` and from `troubleshooting/subscription-not-recognized.mdx`
+
+Use shared snippets for gated copy:
+
+- `snippets/AvailabilityBadge.mdx` — feature availability badge
+- `snippets/IsSouschefFree.mdx` / `IsSouschefFreeShort.mdx` — “Is Souschef free?” answers
+- Import `{ SUBSCRIPTION_ENABLED }` from `snippets/flags.mdx` for conditional blocks
 
 ## Style preferences
 
@@ -31,21 +49,21 @@
 
 ### Feature availability badges
 
-Almost every product feature is available on the free plan. Souschef Plus is primarily for unlimited recipe imports and an ad-free import experience.
-
-On major feature pages, place a linked availability badge immediately below the title:
+On major feature pages, place the availability badge immediately below the title:
 
 ```mdx
-<a href="/billing/free-plan" className="help-availability-badge">
-  <Badge icon="circle-check" color="green" shape="pill">Included in Free plan</Badge>
-</a>
+import AvailabilityBadge from "/snippets/AvailabilityBadge.mdx";
+
+<AvailabilityBadge />
 ```
 
-For Souschef Plus pages (`subscription-benefits`, `subscribe`):
+When `SUBSCRIPTION_ENABLED` is true, the badge links to the free plan page. When false, it shows **Free for now** with no billing link.
+
+For Souschef Plus pages (`subscription-benefits`, `subscribe`) when subscriptions are enabled:
 
 ```mdx
 <a href="/billing/free-plan" className="help-availability-badge">
-  <Badge icon="star" color="yellow" shape="pill">Souschef Plus</Badge>
+ <Badge icon="star" color="yellow" shape="pill">Souschef Plus</Badge>
 </a>
 ```
 

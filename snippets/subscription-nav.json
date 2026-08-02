@@ -1,0 +1,18 @@
+{
+  "comment": "Restore into docs.json navigation.groups when SUBSCRIPTION_ENABLED is true in snippets/flags.mdx. Insert Subscription & Billing before Account & Privacy, and add troubleshooting/subscription-not-recognized under Troubleshooting.",
+  "subscriptionAndBilling": {
+    "group": "Subscription & Billing",
+    "pages": [
+      "billing/free-plan",
+      "billing/import-limits",
+      "billing/subscription-benefits",
+      "billing/subscribe",
+      "billing/restore-purchase",
+      "billing/cancel",
+      "billing/refund",
+      "billing/after-cancellation",
+      "billing/faq"
+    ]
+  },
+  "subscriptionTroubleshootingPage": "troubleshooting/subscription-not-recognized"
+}

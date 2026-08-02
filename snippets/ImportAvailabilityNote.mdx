@@ -1,0 +1,9 @@
+import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
+import ImportAvailabilityNoteOn from "/snippets/ImportAvailabilityNote.on.mdx";
+import ImportAvailabilityNoteOff from "/snippets/ImportAvailabilityNote.off.mdx";
+
+{SUBSCRIPTION_ENABLED ? (
+  <ImportAvailabilityNoteOn />
+) : (
+  <ImportAvailabilityNoteOff />
+)}
