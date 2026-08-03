@@ -1,7 +1,7 @@
 ---
 title: "All the recipe sources you can import into Souschef"
 sidebarTitle: "Supported Sources"
-description: "Souschef can import recipes from Instagram, TikTok, Facebook, YouTube, Pinterest, recipe websites, photos, and pasted text. Here's a full overview."
+description: "Souschef can import recipes from Instagram, TikTok, Facebook, YouTube, Pinterest, recipe websites, photos, ChatGPT, Claude, and pasted text. Here's a full overview."
 ---
 
 import AvailabilityBadge from "/snippets/AvailabilityBadge.mdx";
@@ -23,7 +23,7 @@ import { SUBSCRIPTION_ENABLED } from "/snippets/flags.mdx";
 
 {/* TODO: replace with a dedicated `magnifying-glass` mascot illustration once available */}
 
-Souschef can pull recipes from almost anywhere you find food inspiration — whether you're scrolling through social media, watching a cooking video, browsing a recipe blog, flipping through a printed cookbook, or copy-pasting a family favorite from a text message. In most cases, it's just a tap or two away. Here's every source Souschef currently supports, with links to detailed guides for each one.
+Souschef can pull recipes from almost anywhere you find food inspiration — whether you're scrolling through social media, watching a cooking video, browsing a recipe blog, flipping through a printed cookbook, asking ChatGPT or Claude for ideas, or copy-pasting a family favorite from a text message. In most cases, it's just a tap or two away. Here's every source Souschef currently supports, with links to detailed guides for each one.
 
 <CardGroup cols={2}>
   <Card title="Instagram" icon="instagram" href="/importing/import-from-instagram">
@@ -72,6 +72,15 @@ Souschef can pull recipes from almost anywhere you find food inspiration — whe
   Scan feature — just point your camera and go.
 </Card>
 
+<Card
+  title="ChatGPT & Claude"
+  icon="comments"
+  href="/importing/import-from-ai-chat"
+>
+  Copy a recipe from ChatGPT, Claude, or another AI chat app and paste it into
+  Souschef's Text import option.
+</Card>
+
   <Card title="Plain Text" icon="clipboard" href="/importing/import-from-plain-text">
     Paste recipe text and let AI extract the ingredients and steps, or create a recipe manually from scratch.
   </Card>
@@ -85,7 +94,7 @@ Don't have a specific link? Use [AI Discovery](/using/ai-discovery) to describe 
 
 Most sources work through your phone's **share sheet** — the menu that appears when you tap the Share button inside any app. Tap Share, find the Souschef icon, and the import kicks off automatically. If you don't see Souschef in your share sheet, check out [how to add Souschef to your share menu](/getting-started/add-to-share-menu).
 
-For sources without a share sheet flow — or when you just have text — use the **\+** button inside Souschef to paste a URL, paste recipe text, take a screenshot and scan them, or create a recipe manually.
+For sources without a share sheet flow — or when you just have text from ChatGPT, Claude, a text message, or another app — use the **\+** button inside Souschef to paste a URL, paste recipe text, take a screenshot and scan it, or create a recipe manually.
 
 {SUBSCRIPTION_ENABLED && <FreePlanImportLimit />}
 
@@ -105,6 +114,7 @@ Can't find what you're looking for? Our team is happy to help — [contact suppo
   <li><a href="/importing/import-from-pinterest">Import from Pinterest</a></li>
   <li><a href="/importing/import-from-website">Import from a recipe website</a></li>
   <li><a href="/importing/import-from-photos">Import from screenshots or photos</a></li>
+  <li><a href="/importing/import-from-ai-chat">Import from ChatGPT or Claude</a></li>
   <li><a href="/importing/import-from-plain-text">Import from plain text</a></li>
   <li><a href="/using/ai-discovery">AI Discovery</a></li>
   <li><a href="/using/ai-tagging">AI Tagging</a></li>
