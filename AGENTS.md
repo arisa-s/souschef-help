@@ -14,10 +14,10 @@
 
 ## Terminology
 
-- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Shopping Lists, Pantry, AI features, account, and (when enabled) subscriptions
-- **Web version** / **lightweight web viewer**: browser experience for viewing shared recipe links only (view recipe, adjust servings, switch measurement systems)
+- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Journal, Meal Plan, pinned recipes, Shopping Lists, Pantry, AI features, joining and editing shared collections, account, and (when enabled) subscriptions
+- **Web version** / **lightweight web viewer**: browser experience for shared recipe links (view recipe, adjust servings, switch measurement systems), shared shopping lists, and peeking at shared collections
 - Do not say Souschef is "mobile-only" or that there is "no web version"
-- Preferred framing: "Souschef has a lightweight web version for viewing shared recipes. To import recipes, organize your library, and access the full feature set, use the iOS or Android app."
+- Preferred framing: "Souschef has a lightweight web version for viewing shared recipes, shopping lists, and collections. To import recipes, organize your library, journal, plan meals, and access the full feature set, use the iOS or Android app."
 
 ## Subscription feature flag
 
@@ -67,7 +67,7 @@ For Souschef Plus pages (`subscription-benefits`, `subscribe`) when subscription
 </a>
 ```
 
-Do **not** label Cooking Mode, Shopping Lists, Pantry, Nutrition, AI features, printing, servings, measurement conversion, timers, organization, sharing, or import sources as Plus-only.
+Do **not** label Cooking Mode, Shopping Lists, Pantry, Nutrition, AI features, printing, servings, measurement conversion, timers, organization, Journal, Meal Plan, pinned recipes, sharing, or import sources as Plus-only.
 
 ## Content boundaries
 
