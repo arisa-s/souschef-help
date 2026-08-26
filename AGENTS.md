@@ -23,8 +23,8 @@
 
 Pricing and subscription docs are gated by `SUBSCRIPTION_ENABLED` in `snippets/flags.mdx`.
 
-- **`false` (current):** Say the app is free. Hide billing pages and subscription copy. Feature badges show **Free**.
-- **`true`:** Show Souschef Plus pricing, billing docs, import limits, and **Included in Free plan** badges.
+- **`false`:** Say the app is free. Hide billing pages and subscription copy. Feature badges show **Free**.
+- **`true` (current):** Show Souschef Plus pricing, billing docs, import limits, and **Included in Free plan** badges.
 
 When flipping the flag to `true`, also:
 
