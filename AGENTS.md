@@ -69,6 +69,10 @@ For Souschef Plus pages (`subscription-benefits`, `subscribe`) when subscription
 
 Do **not** label Cooking Mode, Shopping Lists, Pantry, Nutrition, AI features, printing, servings, measurement conversion, timers, organization, Journal, Meal Plan, pinned recipes, sharing, or import sources as Plus-only.
 
+Do **not** say “almost every feature is free” or “most features are available on the free plan.” Every feature is free. The free plan’s only limit is a weekly import quota. Souschef Plus only adds unlimited imports — it does not unlock extra features.
+
+Souschef does not serve ads for free or Plus users. Do not describe ads during imports, or an ad-free import experience, as a Plus benefit.
+
 ## Content boundaries
 
 {/* Define what should and shouldn't be documented */}

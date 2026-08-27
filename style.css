@@ -242,3 +242,145 @@ h2,
   background-color: #fff;
   color: var(--text-primary);
 }
+
+/*
+  Homepage cards rendered from JS conditionals don't get Mintlify's `mint-`
+  Tailwind prefix. Style them with custom classes so they match the static cards.
+*/
+.mdx-content a.help-home-card,
+.mdx-content a.help-home-banner,
+.mdx-content a.help-popular-link,
+.help-home-card,
+.help-home-banner {
+  background-color: #fff;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: inherit;
+  text-decoration: none;
+}
+
+.mdx-content a.help-home-card,
+.help-home-card {
+  display: block;
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.mdx-content a.help-home-banner,
+.help-home-banner {
+  display: block;
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  transition: box-shadow 0.15s ease;
+}
+
+@media (min-width: 640px) {
+  .mdx-content a.help-home-banner,
+  .help-home-banner {
+    padding: 2rem;
+  }
+}
+
+.mdx-content a.help-home-card:hover,
+.mdx-content a.help-home-banner:hover,
+.help-home-card:hover,
+.help-home-banner:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.help-home-card-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.help-home-card-icon-billing {
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+.mdx-content h3.help-home-card-title,
+.help-home-card-title {
+  font-family: var(--font-accent);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+}
+
+.help-home-card-desc {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.help-home-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.help-home-banner-check {
+  color: #10b981;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.help-home-banner-check .icon,
+.help-home-banner-check svg {
+  background-color: #10b981 !important;
+}
+
+.help-home-banner-title {
+  font-family: var(--font-accent);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .help-home-banner-title {
+    font-size: 1.5rem;
+  }
+}
+
+.help-home-banner-desc {
+  color: #4b5563;
+  max-width: 48rem;
+  margin: 0;
+}
+
+.mdx-content a.help-popular-link,
+.help-popular-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.mdx-content a.help-popular-link:hover,
+.help-popular-link:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.help-popular-link-label {
+  font-weight: 500;
+  color: var(--text-primary);
+}
