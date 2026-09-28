@@ -1,0 +1,32 @@
+# Souschef
+
+> Souschef is a free recipe keeper for iOS and Android. Save recipes from websites, Instagram, TikTok, YouTube, photos, and text. Cook, shop, organize, and journal for free. Souschef Plus gives you unlimited recipe imports.
+
+Souschef does not remove ads as a Plus benefit. There is no ad-based Plus benefit.
+
+## Product facts
+
+- Cooking Mode, grocery lists, meal planning, cooking journal, collections, search, editing, and sharing are free.
+- Free plan includes 5 saved recipe imports per rolling 7 days.
+- An import counts when you save the recipe. Previewing without saving does not count. Failed imports do not count.
+- Existing saved recipes remain available even after you hit the limit.
+- After the limit: you can still view, cook, edit, organize, and use existing saved recipes. Wait for imports to refresh or upgrade to Plus for unlimited imports.
+- Souschef Plus gives you unlimited recipe imports. It does not unlock separate cooking tools; those are free.
+- Imports run in the background. You can keep browsing and Souschef will notify you when the recipe is ready.
+- View shared recipe lists on the web. Share recipe lists with a web link. Importing, cooking, and organizing happen in the iOS and Android apps.
+
+## Key pages
+
+- [What is Souschef?](https://docs.trysouschef.com/getting-started/what-is-souschef)
+- [Free vs Souschef Plus](https://docs.trysouschef.com/billing/free-plan)
+- [Import limits](https://docs.trysouschef.com/billing/import-limits)
+- [How import quota works](https://docs.trysouschef.com/billing/how-import-quota-works)
+- [Souschef Plus](https://docs.trysouschef.com/billing/subscription-benefits)
+- [Billing FAQ](https://docs.trysouschef.com/billing/faq)
+- [Import from Instagram](https://docs.trysouschef.com/importing/import-from-instagram)
+- [Import from TikTok](https://docs.trysouschef.com/importing/import-from-tiktok)
+- [Import from YouTube](https://docs.trysouschef.com/importing/import-from-youtube)
+- [Supported devices](https://docs.trysouschef.com/getting-started/supported-devices)
+- [Homepage](https://www.trysouschef.com/)
+- [Free recipe keeper app](https://www.trysouschef.com/free-recipe-keeper-app)
+- [Recipe keeper](https://www.trysouschef.com/recipe-keeper)

@@ -1,7 +1,7 @@
 ---
 title: "Share a recipe collection in Souschef"
 sidebarTitle: "Shared Collections"
-description: "Invite people to a shared folder of recipes — a household weeknight pile, not a copy of everyone’s whole library."
+description: "Share a private link so friends can cook from the same collection. Anyone with the link can open it. People who open it in the app join your library."
 ---
 
 import AvailabilityBadge from "/snippets/AvailabilityBadge.mdx";
@@ -20,53 +20,106 @@ This feature is included in the free version of Souschef.
   />
 </div>
 
-Bookmarks stay personal. A shared collection is the recipes this group actually cooks from — a household “weeknight dinners” pile, not a copy of everyone’s whole library.
+Share a private link so friends can cook from the same collection. Links are not public. Anyone with the link can open it. People who open it in the app and sign in join your library.
 
-Sharing uses the same private-link model as [shopping lists](/using/share-shopping-list): the owner shares **edit** or **view**, and friends open the link in the app and sign in to join.
+A shared collection is the recipes this group actually cooks from — a household weeknight pile, not a copy of everyone’s whole library. Sharing uses the same private-link model as [shopping lists](/using/share-shopping-list).
 
-## Share a collection
+## What you can share
+
+| | Collection | Shopping list |
+| --- | --- | --- |
+| Live share | Browse recipes together | Shop the same list together |
+| Web, no account | View recipes | Check items off (if you allow editing) |
+| App, signed in | Collection appears in **Bookmarks** | List appears in **Shopping** |
+| Snapshot | — | Share as plain text |
+
+## How you share
 
 <Steps>
-  <Step title="Open a collection you own">
-    In **Bookmarks**, tap **Collections** and open the folder you want to share. See [Organize & Search](/using/organize-and-search) if you haven’t created one yet.
+  <Step title="Create a collection, or open Share on one you own">
+    In **Bookmarks**, tap **Collections**. Create a folder or open one you own. See [Organize & Search](/using/organize-and-search) if you haven’t created one yet.
+
+    After you add recipes to a new collection, Souschef offers **Invite Friends** on the spot.
   </Step>
-  <Step title="Share an edit or view link">
-    Choose whether people can add and remove recipes (**edit**) or only browse (**view**), then send the private link.
+  <Step title="Choose Allow editing on or off">
+    **Allow editing** on: people who join in the app become **Collaborators**. **Allow editing** off: they join as **Viewers**.
   </Step>
-  <Step title="Friends join in the app">
-    They open the link in Souschef and sign in. The collection then appears under **Bookmarks** with a **Shared** badge and **Shared by [name]**.
+  <Step title="Copy or send the private link">
+    Send the link however you usually share — Messages, email, or another app.
   </Step>
 </Steps>
+
+The link is unlisted — it isn’t a public page. Web pages for shared collections are not meant to show up in search results.
+
+<Info>
+  📸 Screenshot needed: share sheet with Allow editing on or off for a collection.
+</Info>
+
+## Open a shared link
+
+Shared links look like `trysouschef.app/s/…`.
+
+<Tabs>
+  <Tab title="On the web">
+    Open the link in a browser. You can browse recipes. You cannot edit the collection or add it to **Bookmarks** from the web.
+
+    <Note>
+      The web is for peeking. Joining and adding recipes happens in the iOS or
+      Android app.
+    </Note>
+  </Tab>
+  <Tab title="In the app">
+    <Steps>
+      <Step title="Sign in">
+        Open the link in Souschef. Sign in, or create an account.
+      </Step>
+      <Step title="Join the collection">
+        The collection is added to your library under **Bookmarks**. Your role comes from the link: editing on → **Collaborator**; off → **Viewer**.
+      </Step>
+    </Steps>
+
+    You can rejoin later with the same link if you leave.
+  </Tab>
+</Tabs>
+
+If a link is off, expired, or unknown, you’ll see: **This link is no longer available. Ask the owner to send a new private link.** See [Share link unavailable](/troubleshooting/share-link-unavailable).
+
+## Who can do what
+
+- **You (owner)** — share, change the link type, remove people, turn sharing off, rename, and delete the collection.
+- **Collaborator** — add or remove their recipes. They cannot rename, delete, or manage people.
+- **Viewer** — look only. They can leave.
+- **Web (no account)** — browse recipes. No editing.
+
+To add a recipe, it must already be saved or created in that person’s library. You can’t drop in a random URL from the collection screen.
+
+## Use a shared collection in the app
+
+Shared collections show **Shared by [name]** and a **Shared** badge.
 
 <Info>
   📸 Screenshot needed: collection with a Shared badge and “Shared by [name].”
 </Info>
 
-<Info>
-  📸 Screenshot needed: share sheet with edit and view options for a collection.
-</Info>
-
-## Who can do what
-
-- **Owner** — rename, add or remove recipes, share, remove people, and delete the collection.
-- **Editor** — add or remove recipes from their own saved recipes. They can’t rename, share, or delete the collection.
-- **Viewer** — browse and open recipes only.
-- **Web visitor** — browse titles and cards. They can’t join or edit until they open the collection in the app. Checking items off isn’t a thing for collections.
-
-<Note>
-  The web is for peeking. Adding recipes and keeping the collection in Bookmarks
-  happens in the iOS or Android app.
-</Note>
-
-## Use a shared collection
-
 Members can open every recipe in the collection — cook, [pin](/using/pinned-recipes), and more — even if they never saved it themselves.
 
-To add a recipe, it must already be saved or created in that person’s library. You can’t drop in a random URL from the collection screen.
+When you save a recipe, shared collections you can edit appear under **Shared collection**.
 
-If you don’t own the collection, you can leave it. You can rejoin later with the same still-active link.
+Owners manage people from **Share**. Members leave from the collection, and can rejoin later with the same still-active link.
 
-Deleting a collection does not delete the recipes. Owner delete is permanent for the folder; members just lose access.
+Deleting a collection does not delete the recipes. Owner delete is permanent for the folder. Members just lose access.
+
+## Turn sharing off
+
+The owner can turn off sharing / collaboration at any time.
+
+<Warning>
+  The collection is private again. The link stops working. Everyone else loses
+  access.
+</Warning>
+
+- **New link** — the old link dies. People who already joined keep access.
+- **Remove someone** — they lose access until they use a working link again.
 
 ---
 
@@ -80,5 +133,6 @@ If you have questions or run into anything unexpected, our team is happy to help
 
 - [Organize & Search](/using/organize-and-search)
 - [Share a shopping list](/using/share-shopping-list)
+- [Share link unavailable](/troubleshooting/share-link-unavailable)
 - [Pinned recipes](/using/pinned-recipes)
 - [How to use Cooking Mode](/using/cooking-mode)

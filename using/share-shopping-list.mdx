@@ -1,7 +1,7 @@
 ---
-title: "Share a live shopping list with your household"
+title: "Share a live shopping list with friends"
 sidebarTitle: "Share a Shopping List"
-description: "Share a private link so your household can check off one live grocery list together — in the app or on the web."
+description: "Share a private link so friends can shop the same live grocery list. Anyone with the link can open it. People who open it in the app join your library."
 ---
 
 import AvailabilityBadge from "/snippets/AvailabilityBadge.mdx";
@@ -20,45 +20,74 @@ This feature is included in the free version of Souschef.
   />
 </div>
 
-One live grocery list for a household. Share a private link so you’re not juggling two lists or a text thread while you’re both at the store. Build the list first — see [Shopping List](/using/shopping-list) — then share it.
+Share a private link so friends can shop from the same live list. Links are not public. Anyone with the link can open it. People who open it in the app and sign in join your library.
 
-## Share a live link
+One live grocery list so you’re not juggling two lists or a text thread at the store. See [Shopping List](/using/shopping-list) to build a list. After you create one, Souschef offers **Invite Friends** on the spot. Sharing uses the same private-link model as [collections](/using/shared-collections).
+
+## What you can share
+
+| | Collection | Shopping list |
+| --- | --- | --- |
+| Live share | Browse recipes together | Shop the same list together |
+| Web, no account | View recipes | Check items off (if you allow editing) |
+| App, signed in | Collection appears in **Bookmarks** | List appears in **Shopping** |
+| Snapshot | — | Share as plain text |
+
+## How you share
 
 <Steps>
-  <Step title="Open a list that has items">
-    You can share once the list isn’t empty.
+  <Step title="Create a list, or open Share on one you own">
+    Open a shopping list you own. After you create a shopping list, Souschef offers **Invite Friends** on the spot.
   </Step>
-  <Step title="Tap Share">
-    Tap **Share** on the list.
-
-    <Info>
-      📸 Screenshot needed: shopping list with the Share button highlighted.
-    </Info>
+  <Step title="Choose Allow editing on or off">
+    **Allow editing** on: people who join in the app become **Collaborators**. **Allow editing** off: they join as **Viewers**.
   </Step>
-  <Step title="Choose Allow editing or View only">
-    **Allow editing** lets people add, edit, and check items in the app. **View only** lets them see the list without checking or editing.
-  </Step>
-  <Step title="Send the private link">
+  <Step title="Copy or send the private link">
     Send the link however you usually share — Messages, email, or another app.
   </Step>
 </Steps>
 
-Friends who open the link **in the app and sign in** join the list. Anyone with the link can open it **on the web without an account**.
-
 The link is unlisted — it isn’t a public page. Web pages for shared lists are not meant to show up in search results.
 
 <Info>
-  📸 Screenshot needed: share sheet with Allow editing and View only.
+  📸 Screenshot needed: shopping list with Share and Invite Friends, plus Allow editing on or off.
 </Info>
+
+## Open a shared link
+
+Shared links look like `trysouschef.app/s/…`.
+
+<Tabs>
+  <Tab title="On the web">
+    Open the link in a browser. You don’t need an account.
+
+    - **Allow editing** on: enter a short name, then check or uncheck items. Others see who checked what.
+    - **View only**: look, don’t check.
+
+    Web guests are not added to the app until they sign in and join.
+  </Tab>
+  <Tab title="In the app">
+    <Steps>
+      <Step title="Sign in">
+        Open the link in Souschef. Sign in, or create an account.
+      </Step>
+      <Step title="Join the list">
+        The list is added to **Shopping**. Your role comes from the link: editing on → **Collaborator**; off → **Viewer**.
+      </Step>
+    </Steps>
+
+    You can rejoin later with the same link if you leave.
+  </Tab>
+</Tabs>
+
+If a link is off, expired, or unknown, you’ll see: **This link is no longer available. Ask the owner to send a new private link.** See [Share link unavailable](/troubleshooting/share-link-unavailable).
 
 ## Who can do what
 
-- **Owner (app)** — full control: edit, check, share, and remove people.
-- **Editor (edit link, joined in the app)** — add, edit, and check items. They can’t manage the link.
-- **Viewer (view link, joined in the app)** — see the list. They can’t check or edit.
-- **Web guest (has the link, not in the app)** — on an **edit** link, enter a short name (no links) and then check items. On a **view** link, look only.
-
-Joining in the app adds the list to their Shopping tab. Web guests don’t get that until they open the list in the app and sign in.
+- **You (owner)** — share, change the link type, remove people, turn sharing off, rename, and delete the list.
+- **Collaborator** — add or edit items, check off, and rename. They cannot delete the list or turn sharing off.
+- **Viewer** — look only. They can leave.
+- **Web guest (editing on)** — check items with a name. They are not added to the app until they sign in and join.
 
 <Note>
   View-only members can see the list but cannot shop it. Web guests must add a
@@ -67,25 +96,37 @@ Joining in the app adds the list to their Shopping tab. Web guests don’t get t
 
 ## Use a shared list in the app
 
-Switch lists from the title to move between lists you own and lists you joined. Shared lists show **Shared** or **Collaborating** and people’s avatars.
-
-When someone checks an item, you’ll see who did it — for example, “Alex checked this.”
-
-If you own the list, you can remove someone from it.
+Switch lists from the title to move between lists you own and lists you joined. Shared lists show people’s avatars. Checks say who last checked them.
 
 <Info>
-  📸 Screenshot needed: shared shopping list with Shared/Collaborating, avatars,
-  and a “checked this” label on an item.
+  📸 Screenshot needed: shared shopping list with people’s avatars and a “checked
+  this” label on an item.
 </Info>
+
+Owners manage people from **Share**. If you don’t own the list, you can leave it and rejoin later with the same still-active link.
 
 ## Share as plain text instead
 
-Need to send the list to someone who doesn’t use Souschef? You can still share it as plain text — sorted by aisle — via Messages or any messaging app. That copy doesn’t stay in sync. For a live list, use the private link above.
+Shopping lists only: **Share as text** sends a one-time copy. That is not live.
+
+Use this when you need to send the list to someone who doesn’t use Souschef — sorted by aisle — via Messages or any messaging app. For a live list, use the private link above.
 
 <Info>
   📸 Screenshot needed: Messages compose screen with a shopping list checklist
   ready to send.
 </Info>
+
+## Turn sharing off
+
+The owner can turn off sharing / collaboration at any time.
+
+<Warning>
+  The list is private again. The link stops working. Everyone else loses access.
+  Checked items stay on yours.
+</Warning>
+
+- **New link** — the old link dies. People who already joined keep access.
+- **Remove someone** — they lose access until they use a working link again.
 
 <Warning>
   Lists with no edits or check-offs for **7 days** are deleted — including
@@ -104,5 +145,6 @@ If you have questions or run into anything unexpected, our team is happy to help
 
 - [Shopping List](/using/shopping-list)
 - [Shared collections](/using/shared-collections)
+- [Share link unavailable](/troubleshooting/share-link-unavailable)
 - [Pantry](/using/pantry)
 - [Plan weekly meals](/using/meal-planner)

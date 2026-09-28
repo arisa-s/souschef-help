@@ -114,6 +114,7 @@
           "troubleshooting/import-failed",
           "troubleshooting/missing-from-share-menu",
           "troubleshooting/recipes-missing",
+          "troubleshooting/share-link-unavailable",
           "troubleshooting/subscription-not-recognized",
           "troubleshooting/app-not-loading",
           "troubleshooting/contact-support"
@@ -125,7 +126,7 @@
     "primary": {
       "type": "button",
       "label": "Download App",
-      "href": "https://onelink.to/7jpeua"
+      "href": "https://onelink.to/7jpeua?utm_source=website&utm_medium=seo&utm_campaign=free_recipe_keeper&utm_content=docs_nav"
     }
   },
   "redirects": [

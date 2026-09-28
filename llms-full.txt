@@ -1,0 +1,67 @@
+# Souschef
+
+Souschef is a free recipe keeper for saving recipes from websites, Instagram, TikTok, YouTube, photos, and text. Cook, shop, organize, and journal for free. Plus adds unlimited imports.
+
+## Is Souschef free?
+
+Yes. All cooking and organization tools are free. Free users get 5 saved recipe imports per rolling 7 days. Souschef Plus is optional and adds unlimited imports.
+
+Cooking Mode, grocery lists, meal planning, cooking journal, collections, search, editing, and sharing are free.
+
+## What does Souschef Plus include?
+
+Souschef Plus includes unlimited recipe imports. It does not unlock separate cooking tools; those are free.
+
+Souschef Plus gives you unlimited recipe imports. All cooking and organization tools are free.
+
+There is no ad-based Plus benefit. Souschef Plus does not remove ads.
+
+## Free import allowance
+
+Free users can save 5 imported recipes per rolling 7 days.
+
+Free plan includes 5 saved recipe imports per rolling 7 days.
+
+An import counts when you tap Save. Previewing a recipe and leaving without saving does not count. Failed or unsupported imports do not count. Editing a recipe you already saved does not count.
+
+The allowance uses a rolling 7-day window. Each saved import frees a slot 7 days later. It is not a calendar-week reset.
+
+## What happens after the limit?
+
+You can still view, cook, edit, organize, and use existing saved recipes. You just need to wait for imports to refresh or upgrade to Plus for unlimited imports.
+
+Existing saved recipes remain available even after you hit the limit.
+
+## Can I still use saved recipes if I do not pay?
+
+Yes. Your saved recipes and cooking tools remain available.
+
+## Imports
+
+Imports run in the background. You can keep browsing and Souschef will notify you when the recipe is ready.
+
+This applies to Instagram, TikTok, YouTube, and other supported imports.
+
+## Web
+
+View shared recipe lists on the web. Share recipe lists with a web link.
+
+On the web, someone can view a shared recipe, adjust servings, and switch measurement systems. Shared shopping lists and collections can be opened from a link.
+
+Importing, cooking, and organizing happen in the iOS and Android apps. The web experience is for viewing shared recipe lists.
+
+## Platforms
+
+- iPhone and iPad: App Store
+- Android phones and tablets: Google Play
+
+## Where to read more
+
+- https://docs.trysouschef.com/billing/free-plan
+- https://docs.trysouschef.com/billing/import-limits
+- https://docs.trysouschef.com/billing/how-import-quota-works
+- https://docs.trysouschef.com/billing/subscription-benefits
+- https://docs.trysouschef.com/billing/faq
+- https://www.trysouschef.com/
+- https://www.trysouschef.com/free-recipe-keeper-app
+- https://www.trysouschef.com/recipe-keeper

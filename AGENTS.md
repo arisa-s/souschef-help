@@ -14,10 +14,11 @@
 
 ## Terminology
 
-- **Full experience** / **mobile app**: iOS and Android apps — importing, library, Cooking Mode, Journal, Meal Plan, pinned recipes, Shopping Lists, Pantry, AI features, joining and editing shared collections, account, and (when enabled) subscriptions
-- **Web version** / **lightweight web viewer**: browser experience for shared recipe links (view recipe, adjust servings, switch measurement systems), shared shopping lists, and peeking at shared collections
+- **Mobile app**: iOS and Android apps — importing, library, Cooking Mode, Journal, Meal Plan, pinned recipes, Shopping Lists, Pantry, AI features, joining and editing shared collections, account, and (when enabled) subscriptions
+- **Web**: viewing shared recipe lists, shopping lists, and collections. Prefer “View shared recipe lists on the web” or “Share recipe lists with a web link.”
 - Do not say Souschef is "mobile-only" or that there is "no web version"
-- Preferred framing: "Souschef has a lightweight web version for viewing shared recipes, shopping lists, and collections. To import recipes, organize your library, journal, plan meals, and access the full feature set, use the iOS or Android app."
+- Do not say “use Souschef fully on web,” “sync across web,” “web app,” “desktop app,” or “full web”
+- Preferred framing: "View shared recipe lists on the web. Importing, cooking, and organizing happen in the iOS and Android apps."
 
 ## Subscription feature flag
 
@@ -69,9 +70,17 @@ For Souschef Plus pages (`subscription-benefits`, `subscribe`) when subscription
 
 Do **not** label Cooking Mode, Shopping Lists, Pantry, Nutrition, AI features, printing, servings, measurement conversion, timers, organization, Journal, Meal Plan, pinned recipes, sharing, or import sources as Plus-only.
 
-Do **not** say “almost every feature is free” or “most features are available on the free plan.” Every feature is free. The free plan’s only limit is a weekly import quota. Souschef Plus only adds unlimited imports — it does not unlock extra features.
+Do **not** say “almost every feature is free” or “most features are available on the free plan.” Cooking and organization tools are free. Say that next to the import limit: free users can save 5 imported recipes per rolling 7 days. Existing saved recipes remain available even after you hit the limit.
 
-Souschef does not serve ads for free or Plus users. Do not describe ads during imports, or an ad-free import experience, as a Plus benefit.
+Preferred Plus sentence: “Souschef Plus gives you unlimited recipe imports.” Plus does not unlock separate cooking tools.
+
+Preferred free-tools sentence: “Cooking Mode, grocery lists, meal planning, cooking journal, collections, search, editing, and sharing are free.”
+
+Do **not** describe a weekly calendar reset when you mean the rolling 7-day window.
+
+Souschef does not serve ads for free or Plus users. Do not describe ads during imports, ad removal, or an ad-free import experience as a Plus benefit.
+
+Imports from Instagram, TikTok, YouTube, and similar sources run in the background. Do not tell people they must keep the app open. Use: “Imports run in the background. You can keep browsing and Souschef will notify you when the recipe is ready.”
 
 ## Content boundaries
 
